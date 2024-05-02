@@ -1,0 +1,69 @@
+game:
+  languages: ['de', 'en']
+  cameraPresets:
+    walking:
+      offset:
+        x: 0
+        y: -1.35
+      zoom: 0.65
+    talking:
+      offset:
+        x: 0
+        y: -0.8
+      zoom: 1
+textures:
+  bundles:
+    - name: 'town-view'
+      assets:
+        - name: 'town-bg'
+          srcs: 'kaufloft.png'
+        - name: 'town-collmap'
+          srcs: 'kaufloft-collmap.png'
+        - name: 'player-1'
+          srcs: 'player-1.json'
+        - name: 'player-2'
+          srcs: 'player-2.json'
+        - name: 'player-3'
+          srcs: 'player-3.json'
+        - name: 'npcs-demo'
+          srcs: 'npcs-demo.json'
+        - name: 'mood-balloon'
+          srcs: 'mood-balloon.json'
+        - name: 'map-markers'
+          srcs: 'map-markers.json'
+        - name: 'icons'
+          srcs: 'icons.json'
+        - name: 'target-arrow'
+          srcs: 'target-arrow.png'
+        - name: 'guide-arrow'
+          srcs: 'guide-arrow.png'
+players:
+  1:
+    color: '#27a6a8'
+    spawn: { x: 3080, y: 2640 }
+storylines:
+  - kaufloft
+i18n:
+  ui:
+    defaultPrompt:
+      en: 'Help revive the neighborhood. Talk to citizens with a :speech_bubble: to get quests.'
+      de: 'Hilf, das Viertel wiederzubeleben.<br>Sprich mit Bürger:innen mit einer&nbsp;:speech_bubble:, um Aufgaben zu erhalten.'
+#    title:
+#      en: 'Data 🩷 Quest'
+#    pressStart:
+#      en: "Press space to start"
+#    decisionMade:
+#      en: 'Thank you for playing! Here are your quest achievements:'
+#    waitingToBegin:
+#      en: 'Get ready! A new game will begin soon.'
+#    waitingToEnd:
+#      en: 'Waiting for the other players…'
+#    pressToContinue:
+#      en: 'Press space to continue'
+#    includedInDecision:
+#      en: 'Included in the decision'
+#    inclusionBarTitle:
+#      en: 'Who decides?'
+
+
+

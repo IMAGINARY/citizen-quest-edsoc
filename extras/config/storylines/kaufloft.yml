@@ -1,0 +1,968 @@
+decision:
+  en: "Help citizens revive the neighborhood by listening, finding good information, and communicating it clearly."
+  de: "Hilf den Bürger:innen bei der Wiederbelebung des Viertels, indem du zuhörst, gute Informationen findest und sie klar kommunizierst."
+prompt:
+  en: "The old Kaufloft Store building used to be the center of activities in the neighborhood, but it’s been vacant for seven years. Help citizens revive the neighborhood by listening, finding good information, and communicating it clearly."
+  de: "Das alte Kaufloft-Gebäude war früher das Zentrum aller Aktivitäten im Viertel, aber es steht seit sieben Jahren leer. Hilf den Bürger:innen bei der Wiederbelebung des Viertels, indem du zuhörst, gute Informationen findest und sie klar kommunizierst."
+npcs:
+  mayor:
+    name:
+      en: Mayor
+      de: Bürgermeister
+    spawn: {x: 2130, y: 3396}
+    actAs:
+      - '_asbestosMythDebunker'
+      - '_demolitionEnvTipster'
+    dialogue:
+      - text:
+          en: "The city government wants to have an active role in urban development."
+          de: "Die Stadtverwaltung möchte eine aktive Rolle in der Stadtentwicklung spielen."
+  librarian:
+    name:
+      en: Librarian
+      de: Bibliothekarin
+    type: citizenAqua
+    spawn: {x: 4183, y: 874}
+    actAs:
+      - '_asbestosMythDebunker'
+    dialogue:
+      - text:
+          en: "Shopping is fine, but large public spaces can bring people together in so many more activities!"
+          de: "Einkaufen ist schön, aber große öffentliche Räume bringen Menschen auf viele Arten zusammen!"
+  dogTan:
+    name:
+      en: "Emmy"
+    spawn: { x: 4255, y: 842 }
+    dialogue:
+      - text:
+          en: "Woof!"
+          de: "Wuff!"
+  journalist:
+    name:
+      en: Journalist
+      de: Journalist
+    spawn: {x: 5581, y: 2807}
+    actAs:
+      - '_demolitionEnvTipster'
+    dialogue:
+      - text:
+          en: "Let me know if you need help with anything. I’ll be here… or at the cafe."
+          de: "Sag mir Bescheid, wenn du Hilfe brauchst. Ich werde hier sein… oder im Café."
+  securityGuard:
+    name:
+      en: Security guard
+      de: Sicherheitspersonal
+    spawn: {x: 1044, y: 2470}
+    type: citizenRanger
+    dialogue:
+      - type: sequence
+        items:
+          - text:
+              en: "Please, move along. "
+              de: "Bitte weitergehen."
+          - text:
+              en: "Thank you."
+              de: "Danke."
+  geldbergCeo:
+    name:
+      en: "Geldberg CEO"
+      de: "Geldberg-CEO"
+    spawn: {x: 777, y: 2525}
+    type: museumDirector
+    dialogue:
+      - type: cycle
+        items:
+          - text:
+              en: "We appreciate your interest, share your concerns, and thank you for your time."
+              de: "Wir freuen uns über dein Interesse, teilen deine Bedenken und danken dir für deine Zeit."
+          - text:
+              en: "We’re busy dreaming up solutions to tomorrow’s problems."
+              de: "Wir sind damit beschäftigt, Lösungen für die Probleme von morgen zu finden."
+          - text:
+              en: "At Geldberg, We're on Top of It!"
+              de: "Bei Geldberg haben wir alles im Griff!"
+  youngSkeptic:
+    name:
+      en: "Young skeptic"
+      de: "Junge Zweiflerin"
+    spawn: {x: 5192, y: 1985}
+    type: citizenCat
+    dialogue:
+      - text:
+          en: "Why is the old store closed and the building not for sale? Who profits? How?"
+          de: "Warum ist das alte Kaufhausgebäude geschlossen und steht nicht zum Verkauf? Wer profitiert davon und wie?"
+  robot:
+    name:
+      en: "Robot"
+    spawn: { x: 3933, y: 1240 }
+    dialogue:
+      - type: cycle
+        items:
+          - text:
+              en: "I have no quests for you. I don’t need anything and I can do it better myself."
+              de: "Ich habe keine Aufgaben für dich. Ich brauche nichts und kann es selbst besser machen."
+          - text:
+              en: "City planning issues will disappear once you let AI take over."
+              de: "Die Probleme der Stadtplanung werden verschwinden, wenn du die KI übernehmen lässt."
+          - text:
+              en: "When humans become extinct, us robots will inherit all the quark. Yum!"
+              de: "Wenn die Menschen aussterben, werden wir Roboter den ganzen Quark bekommen. Lecker!"
+  engineer:
+    name:
+      en: Engineer
+      de: Ingenieur
+    type: constructionWorker
+    spawn: {x: 1615, y: 1632}
+    actAs:
+      - '_asbestosMythDebunker'
+      - '_demolitionEnvExpert'
+    dialogue:
+      - text:
+          en: "The city should develop more apartments in this area. Homes and shops should be closer together."
+          de: "Die Stadt sollte in diesem Gebiet mehr Wohnungen errichten. Wohnungen und Geschäfte sollten näher beieinander liegen."
+  scientist:
+    name:
+      en: Scientist
+      de: Wissenschaftlerin
+    type: biologist
+    spawn: {x: 5299, y: 1178}
+    actAs:
+      - '_asbestosMythDebunker'
+      - '_demolitionEnvExpert'
+    dialogue:
+      - text:
+          en: "Our research institute used to hold a yearly exhibition about biodiversity in the old store."
+          de: "Unser Forschungsinstitut veranstaltete im alten Kaufhaus jedes Jahr eine Ausstellung über die biologische Vielfalt."
+  videoBlogger:
+    name:
+        en: Videoblogger
+        de: Videoblogger
+    type: citizenCool
+    spawn: {x: 4538, y: 3163}
+    dialogue:
+      - type: cycle
+        items:
+          - text:
+              en: "Are fake news scaring people away from the Kaufloft Store? Find out in this video!"
+              de: "Schrecken Fake News die Menschen vom Kaufloft ab? Finde es in diesem Video heraus!"
+          - text:
+              en: "Do you think we should demolish the Kaufloft Store? Let me know in the comments!"
+              de: "Soll das Kaufloft abgerissen werden? Hinterlasse mir deine Meinung in den Kommentaren!"
+          - text:
+              en: "Can the Geldberg CEO pass the Turing test? Find out in this video!"
+              de: "Kann der Geschäftsführer der Geldberg GmbH den Turing-Test bestehen? Finde es in diesem Video heraus!"
+          - text:
+              en: "In this video I’ll visit the ten best restaurants in the area… They’re all the same ramen place!"
+              de: "In diesem Video besuche ich die zehn besten Restaurants in der Gegend... Sie sind alle das gleiche Ramen-Restaurant!"
+          - text:
+              en: "Don’t forget to LIKE and SUBSCRIBE!"
+              de: "Vergiss nicht zu LIKEN und zu ABONNIEREN!"
+  artist:
+    name:
+      en: Artist
+      de: Künstlerin
+    type: citizenWheelchair
+    spawn: {x: 5291, y: 2638}
+    dialogue:
+      - text:
+          en: "The foot traffic from the old store brought a lot of people to our art gallery."
+          de: "Viele Leute kamen auch in unsere Kunstgalerie, nachdem sie im Kaufhaus waren."
+  citizenOpen1:
+    name:
+      en: "Neighbor"
+      de: "Nachbar"
+    type: citizenHoodie
+    spawn: {x: 5007, y: 1591}
+    dialogue:
+      - text:
+          en: "Buying online is cheaper, but I need a nice café and a movie theater."
+          de: "Online einzukaufen ist zwar billiger, aber ich brauche ein nettes Café und ein Kino."
+  citizenOpen2:
+    name:
+      en: "Neighbor"
+      de: "Nachbarin"
+    type: citizenBraid
+    spawn: {x: 2693, y: 1847}
+    dialogue:
+      - text:
+          en: "The city should repossess the old store and turn it into a huge library."
+          de: "Die Stadt sollte das alte Kaufhaus zurückkaufen und es in eine riesige Bibliothek umwandeln."
+  citizenInvolved1:
+    name:
+      en: "Neighbor"
+      de: "Nachbarin"
+    type: citizenPuan
+    spawn: {x: 3429, y: 1465}
+    dialogue:
+      - text:
+          en: "Living next to a large store means noise, trash, and rats. I hate it."
+          de: "Neben einem großen Geschäft zu wohnen bedeutet Lärm, Müll und Ratten. Ich hasse das."
+  citizenInvolved2:
+    name:
+      en: "Neighbor"
+      de: "Nachbar"
+    type: citizenCage
+    spawn: {x: 2555, y: 2509}
+    dialogue:
+      - text:
+          en: "With the store closed, there are fewer cars and more birds."
+          de: "Wenn das Kaufhaus geschlossen ist, gibt es weniger Autos und mehr Vögel."
+  citizenEstablished1:
+    name:
+      en: "Neighbor"
+      de: "Nachbar"
+    type: citizenHipster
+    spawn: {x: 4750, y: 894}
+    dialogue:
+      - text:
+          en: "The neighborhood doesn’t have a shoe store. I buy everything online, but not shoes!"
+          de: "In der Nachbarschaft gibt es kein Schuhgeschäft. Ich kaufe alles online, aber keine Schuhe!"
+  citizenEstablished2:
+    name:
+      en: "Neighbor"
+      de: "Nachbarin"
+    type: parksDirector
+    spawn: {x: 3090, y: 3526}
+    dialogue:
+      - text:
+          en: "I have confidence in the new mayor."
+          de: "Ich habe Vertrauen in die neue Bürgermeisterin."
+  citizenDetached1:
+    name:
+      en: "Tourist"
+      de: "Tourist"
+    type: tourist
+    spawn: {x: 2082, y: 1240}
+    dialogue:
+      - text:
+          en: "Reopening the store will be better for the whole neighborhood."
+          de: "Die Wiedereröffnung des Kaufhauses wird für das ganze Viertel besser sein."
+  citizenDetached2:
+    name:
+      en: "Neighbor"
+      de: "Nachbar"
+    type: lawyer
+    spawn: { x: 2102, y: 2138 }
+    dialogue:
+      - text:
+          en: "I do all my shopping online, so I really don’t have use for a store."
+          de: "Ich kaufe nur noch online ein, deshalb brauche ich kein Geschäft mehr."
+  citizenDisillusioned1:
+    name:
+      en: "Neighbor"
+      de: "Nachbar"
+    type: citizenChamp
+    spawn: {x: 1676, y: 972}
+    dialogue:
+      - text:
+          en: "A large store means more tourists, which means expensive apartment rents."
+          de: "Ein großes Kaufhaus bedeutet mehr Touristen, und das bedeutet teure Wohnungsmieten."
+  citizenDisillusioned2:
+    name:
+      en: "Neighbor"
+      de: "Nachbarin"
+    type: citizenLila
+    spawn: {x: 4550, y: 1477}
+    dialogue:
+      - text:
+          en: "I’m tired of taking the U-Bahn every time I need to go shopping."
+          de: "Ich bin es leid, jedes Mal die U-Bahn zu nehmen, wenn ich einkaufen muss."
+  citizenAngry1:
+    name:
+      en: "Neighbor"
+      de: "Nachbar"
+    type: citizenPunk
+    spawn: {x: 3762, y: 1407}
+    dialogue:
+      - text:
+          en: "When the department store was open, it was too expensive anyway. No loss."
+          de: "Als das Kaufhaus noch offen war, war es sowieso zu teuer. Kein Verlust."
+  citizenAngry2:
+    name:
+      en: "Neighbor"
+      de: "Nachbarin"
+    type: citizenQueen
+    spawn: {x: 5136, y: 3385}
+    dialogue:
+      - text:
+          en: "I’m afraid that if the building remains vacant, people will squat in it."
+          de: "Ich habe Angst, dass Leute in dem leeren Gebäude hausen werden."
+  activist:
+    name:
+      en: "Activist"
+      de: "Aktivist"
+    type: bear
+    spawn: {x: 4621, y: 2324}
+    dialogue:
+      - text:
+          en: "Beware of Super Asbestos!"
+          de: "Vorsicht vor Super-Asbest!"
+quests:
+  buildingOwner:
+    npc: mayor
+    mood: interrogation
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "The city wants to support the reopening of the Kaufloft Store building…"
+                de: "Die Stadt will die Wiedereröffnung des Kaufloft-Gebäudes unterstützen…"
+            - text:
+                en: "…It could have stores, cultural and educational activities, and liven up the neighborhood…"
+                de: "…Es könnte Geschäfte, Kultur- und Bildungsstätten beherbergen und die Nachbarschaft beleben…"
+            - text:
+                en: "…But we don’t know who the owner is!"
+                de: "…aber wir wissen nicht, wer der Eigentümer ist!"
+            - text:
+                en: "Can you help us figure out who owns the building?"
+                de: "Kannst du uns helfen, herauszufinden, wem das Gebäude gehört?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "Search the city archives in the library."
+                    de: "Recherchiere in der Bücherhalle"
+                  set: [ 'quest.buildingOwner.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+    dialogues:
+      robot:
+        - type: cycle
+          items:
+            - text:
+                en: "If you want to find the building’s owner you should post photos all through the city."
+                de: "Wenn du den Eigentümer des Gebäudes finden willst, solltest du Fotos in der ganzen Stadt aufhängen."
+            - text:
+                en: "Stop searching for the building’s owner. Capitalism should be anonymous."
+                de: "Hör auf, nach dem Eigentümer des Gebäudes zu suchen. Kapitalismus sollte anonym sein."
+            - text:
+                en: "Are you trying to buy the building? According to your shoes, you can’t afford it."
+                de: "Willst du das Gebäude kaufen? Deinen Schuhen nach zu urteilen, kannst du es dir nicht leisten."
+    stages:
+      - cond: 'quest.buildingOwner.stage2'
+        prompt:
+          en: "Ask about the building in the Geldberg Inc. offices."
+          de: "Frage nach dem Kaufloft-Gebäude in den Büros der Geldberg GmbH."
+        dialogues:
+          securityGuard:
+            - type: sequence
+              items:
+                - text:
+                    en: "We know you’ve been investigating us. "
+                    de: "Wir wissen, dass du Nachforschungen zu uns anstellst. "
+                - text:
+                    en: "Our CEO wants to speak to you."
+                    de: "Unser Geschäftsführer möchte mit dir sprechen."
+          geldbergCeo:
+            - type: sequence
+              items:
+                - text:
+                    en: "Geldberg Inc. owns the Kaufloft Store building."
+                    de: "Geldberg GmbH bestitzt Kaufloft-Gebäude."
+                - text:
+                    en: "Remaining closed maximizes fiscal efficiency…"
+                    de: "Schließung maximiert fiskalische Effizienz..."
+                - text:
+                    en: "… however, a city investment recalibrates the equation."
+                    de: "… Städtische Investition kalibriert Gleichung neu."
+                - text:
+                    en: "We’re excited to announce the building’s re-opening!"
+                    de: "Kündigen an: Wir freuen uns auf Wiedereröffnung des Gebäudes!"
+                  set: [ 'quest.buildingOwner.done', 'pnt.research.buildingOwner' ]
+          journalist:
+            - text:
+                en: "The building is owned by Geldberg Inc. You should ask in their offices."
+                de: "Das Gebäude ist im Besitz der Geldberg GmbH. Du solltest direkt bei ihnen nachfragen."
+          mayor:
+            - text:
+                en: "Geldberg Inc.? Please go talk to them and see if they’re willing to re-open."
+                de: "Geldberg GmbH? Bitte sprich mit ihnen und frage, ob sie bereit sind, wieder zu eröffnen."
+      - cond: 'quest.buildingOwner.stage1'
+        prompt:
+          en: "Get help from a journalist to find out who owns the building."
+          de: "Hol dir Hilfe von einem Journalisten, um herauszufinden, wem das Gebäude gehört."
+        dialogues:
+          journalist:
+            - type: sequence
+              items:
+                - text:
+                    en: "Sure, I can use the international network of journalists to find the building's owner."
+                    de: "Natürlich! Ich kann das internationale Netzwerk von Journalist:innen nutzen, um den Eigentümer des Gebäudes zu finden."
+                - text:
+                    en: ":clock: 2 hours later…"
+                    de: ":clock: 2 Stunden später…"
+                - text:
+                    en: "The building was purchased by an Irish Startup that rents hallways online…"
+                    de: "Das Gebäude wurde von einem irischen Startup gekauft, das Flure online vermietet…"
+                - text:
+                    en: "…then it was sold to an Irrational Investment Group based in Lichtenstein."
+                    de: "…dann wurde es an die Irrational Investment Group mit Sitz in Lichtenstein verkauft."
+                - text:
+                    en: "… But now apparently it’s owned by Geldberg Inc. They have an office here in the city."
+                    de: "… Aber jetzt gehört es offenbar der Geldberg GmbH. Sie haben ein Büro hier in der Stadt."
+                  set: [ 'quest.buildingOwner.stage2' ]
+          librarian:
+            - text:
+                en: "A journalist could help you continue the search internationally."
+                de: "Ein Journalist könnte dir helfen, die Suche international fortzusetzen."
+          mayor:
+            - text:
+                en: "Thailand? Interesting. Be sure to talk to a journalist and find out more."
+                de: "Thailand? Das ist interessant. Sprich mit einem Journalisten und finde mehr heraus."
+      - prompt:
+          en: "Search the city archives in the library and find out who owns the building."
+          de: "Recherchiere in der Bücherhalle und finde heraus, wem das Gebäude gehört."
+        dialogues:
+          librarian:
+            - type: sequence
+              items:
+                - text:
+                    en: "Yes, I can search the city archives to see who owns the building. Let me see…"
+                    de: "Ja, ich kann recherchieren, wem das Gebäude gehört. Lass mich mal sehen."
+                - text:
+                    en: ":clock: 15 minutes later…"
+                    de: ":clock: 15 Minuten später…"
+                - text:
+                    en: "Mmm… some years ago, it was sold to a company in Thailand. That’s all I know."
+                    de: "Hmm… vor einigen Jahren wurde es an eine Firma in Thailand verkauft. Das ist alles, was ich weiß."
+                - text:
+                    en: "A journalist could help you continue the search internationally."
+                    de: "Ein Journalist könnte dir helfen, die Suche international fortzusetzen."
+                  set: [ 'quest.buildingOwner.stage1' ]
+          mayor:
+            - text:
+                en: "Search the city archives in the library and find out who owns the building."
+                de: "Recherchiere in der Bücherhalle und finde heraus, wem das Gebäude gehört."
+  disinformation:
+    npc: youngSkeptic
+    mood: information
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "Some people are warning about “Super Asbestos” in the Kaufloft Store building."
+                de: "Einige Leute warnen vor „Super-Asbest“ im Kaufloft-Gebäude."
+            - text:
+                en: "I have a feeling this is fake, and that they just want to scare people."
+                de: "Ich habe das Gefühl, dass es sich dabei um eine Fälschung handelt und die Leute nur Angst verbreiten wollen."
+            - text:
+                en: "Can you help me check if the rumors are true?"
+                de: "Kannst du mir helfen zu überprüfen, ob die Gerüchte wahr sind?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "See what the activist claims, and find an expert who can check it."
+                    de: "Sieh dir an, was der Aktivist behauptet, und finde eine Fachperson, um das zu überprüfen."
+                  set: [ 'quest.disinformation.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+    dialogues:
+      citizenQueen:
+        - text:
+            en: "I’m sure the rumors of “Super asbestos” are true. The government is corrupt and looks the other way."
+            de: "Ich bin sicher, dass die Gerüchte über „Super-Asbest“ wahr sind. Die Regierung ist korrupt und schaut weg."
+      citizenChamp:
+        - text:
+            en: "I just saw a video about “Super asbestos”. I feel it’s true."
+            de: "Ich habe gerade ein Video über „Super-Asbest“ gesehen. Ich glaube, es ist wahr."
+      citizenPunk:
+        - text:
+            en: "People that never entered the store got sick because of “Super asbestos”. This proves it acts at a distance."
+            de: "Menschen, die das Geschäft nie betreten haben, wurden durch „Super-Asbest“ krank. Das beweist, dass es auch aus der Ferne wirkt."
+      citizenPuan:
+        - text:
+            en: "“Super asbestos” is clearly fake news."
+            de: "„Super-Asbest“ ist eindeutig Fake News."
+      parksDirector:
+        - text:
+            en: "“Super asbestos” is clearly fake news."
+            de: "„Super-Asbest“ ist eindeutig Fake News."
+      citizenHipster:
+        - text:
+            en: "Why are we wasting time debunking “Super asbestos”? We need to tax dumb people."
+            de: "Warum verschwenden wir Zeit mit der Entlarvung von „Super-Asbest“? Wir sollten dumme Menschen besteuern."
+      citizenHoodie:
+        - text:
+            en: "I can’t believe people believe in Super Asbestos."
+            de: "Ich kann nicht glauben, dass Menschen an „Super-Asbest“ glauben."
+      citizenBraid:
+        - text:
+            en: "It’s probably a false rumor, but I keep my distance from the store just in case."
+            de: "Wahrscheinlich handelt es sich um ein falsches Gerücht, aber ich halte mich vorsichtshalber von dem Geschäft fern."
+      citizenLila:
+        - text:
+            en: "Should I be worried about Super Asbestos?"
+            de: "Sollte ich mir wegen „Super-Asbest“ Sorgen machen?"
+      citizenCage:
+        - text:
+            en: "It’s probably a false rumor. But it could be true. 50/50."
+            de: "Wahrscheinlich ist es ein falsches Gerücht. Aber es könnte auch wahr sein. 50/50."
+      tourist:
+        - text:
+            en: "Should I be worried about Super Asbestos?"
+            de: "Sollte ich mir wegen „Super-Asbest“ Sorgen machen?"
+      financeDirector:
+        - text:
+            en: "“Super asbestos” is clearly fake news."
+            de: "„Super-Asbest“ ist eindeutig Fake News."
+      robot:
+        - type: cycle
+          items:
+            - text:
+                en: "Scared of Super Asbestos? You should wrap yourself in tin foil. You’ll be protected and handsome."
+                de: "Angst vor Super-Asbest? Wickle dich in Alufolie ein. Dann bist du geschützt und siehst gut aus."
+            - text:
+                en: "People these days are too weak. My grandfather ate asbestos for breakfast."
+                de: "Heutzutage sind die Menschen zu schwach. Mein Großvater hat Asbest zum Frühstück gegessen."
+            - text:
+                en: "The same year that the government banned asbestos, currywurst sauce was invented. Think about it."
+                de: "Im selben Jahr, in dem die Regierung Asbest verbot, wurde die Currywurstsauce erfunden. Denk mal drüber nach."
+    stages:
+      - cond: 'quest.disinformation.stage3'
+        prompt:
+          en: "Find someone that can reach more people with the information."
+          de: "Finde jemanden, der mehr Menschen mit den Informationen erreichen kann."
+        dialogues:
+          journalist:
+            - type: sequence
+              items:
+                - text:
+                    en: "You found proof the rumors are false!"
+                    de: "Du hast den Beweis gefunden, dass die Gerüchte falsch sind!"
+                - text:
+                    en: "The checks in 1995 and 2010 are well documented."
+                    de: "Die Kontrollen von 1995 und 2010 sind gut dokumentiert."
+                - text:
+                    en: "Let me write an article…"
+                    de: "Lass mich einen Artikel schreiben..."
+                - text:
+                    en: ":clock: Some time later"
+                    de: ":clock: Einige Zeit später"
+                - text:
+                    en: "500k :love:! Hopefully this will end the rumors."
+                    de: "500k :love:! Das wird hoffentlich die Gerüchte beenden."
+                  set: [ 'quest.disinformation.done', 'pnt.communicate.disinformation' ]
+          videoBlogger:
+            - type: sequence
+              items:
+                - text:
+                    en: "You found proof the rumors are false!"
+                    de: "Du hast den Beweis gefunden, dass die Gerüchte falsch sind!"
+                - text:
+                    en: "The checks in 1995 and 2010 are well documented."
+                    de: "Die Kontrollen von 1995 und 2010 sind gut dokumentiert."
+                - text:
+                    en: "Let me make a video…"
+                    de: "Ich erstelle ein Video…"
+                - text:
+                    en: ":clock: Some time later"
+                    de: ":clock: Einige Zeit später"
+                - text:
+                    en: "500k :love:! Hopefully this will end the rumors."
+                    de: "500k :love:! Das wird hoffentlich die Gerüchte beenden."
+                  set: [ 'quest.disinformation.done', 'pnt.communicate.disinformation' ]
+      - cond: 'quest.disinformation.stage2'
+        prompt:
+          en: "Tell the young skeptic what you discovered."
+          de: "Berichte der jungen Zweiflerin was du herausgefunden hast."
+        target: youngSkeptic
+        dialogues:
+          youngSkeptic:
+            - type: sequence
+              items:
+                - text:
+                    en: "I knew it was false! Let me post and tell everyone."
+                    de: "Ich wusste, dass es falsch war! Lass es mich posten und allen erzählen."
+                - text:
+                    en: ":clock: 1 hour later…"
+                    de: ":clock: 1 Stunde später…"
+                - text:
+                    en: "Ugh! Only 2 :love:!"
+                    de: "Uff! Nur 2 :love:!"
+                - text:
+                    en: "We need help from someone with more followers."
+                    de: "Wir brauchen Hilfe von jemandem mit mehr Followern."
+                  set: ['quest.disinformation.stage3']
+          _asbestosMythDebunker:
+            - text:
+                en: "The rumor comes back every few years, but it’s FALSE."
+                de: "Das Gerücht kommt alle paar Jahre wieder auf, aber es ist FALSCH."
+          journalist:
+            - type: sequence
+              items:
+                - text:
+                    en: 'I’m sure “Super Asbestos” are fake news.'
+                    de: 'Ich bin sicher, dass „Super-Asbest” Fake News ist.'
+                - text:
+                    en: "If you could debunk it, I would gladly write an article about it."
+                    de: "Wenn du sie entlarven kannst, würde ich gerne einen Artikel darüber schreiben."
+          geldbergCeo:
+            - type: sequence
+              items:
+                - text:
+                    en: "Geldberg Inc. is concerned about the citizens’ safety and good health."
+                    de: "Die Geldberg GmbH ist um die Sicherheit und Gesundheit der Bevölkerung besorgt."
+                - text:
+                    en: "The city should fund an investigation for the presence of “Super Asbestos”."
+                    de: "Die Stadt sollte eine Untersuchung auf das Vorhandensein von „Super-Asbest” finanzieren."
+                - text:
+                    en: "Geldberg Inc. will gladly perform the inspection upon payment."
+                    de: "Die Geldberg GmbH ist gerne bereit, eine Untersuchung gegen Bezahlung durchzuführen."
+          videoBlogger:
+            - type: sequence
+              items:
+                - text:
+                    en: "I’m sure “Super Asbestos” are fake news."
+                    de: "Ich bin sicher, dass „Super-Asbest“ Fake News ist."
+                - text:
+                    en: "If you could debunk it, I would gladly post a video about it."
+                    de: "Wenn du sie entlarven kannst, veröffentliche ich gerne ein Video darüber."
+      - cond: 'quest.disinformation.stage1'
+        prompt:
+          en: "Find an expert who can check the information."
+          de: "Finde eine Fachperson, die die Behauptungen überprüfen kann."
+        dialogues:
+          _asbestosMythDebunker:
+            - type: sequence
+              items:
+                - text:
+                    en: '“Super asbestos” doesn’t exist.'
+                    de: '„Super-Asbest“ gibt es nicht.'
+                - text:
+                    en: "But also, the city checked the building for asbestos in 1995 and again in 2010. We have records."
+                    de: "Außerdem hat die Stadt das Gebäude 1995 und 2010 auf Asbest untersucht. Wir haben Aufzeichnungen."
+                - text:
+                    en: "The rumor comes back every few years, but it’s FALSE."
+                    de: "Das Gerücht kommt alle paar Jahre wieder auf, aber es ist FALSCH."
+                  set: ['quest.disinformation.stage2']
+          youngSkeptic:
+            - text:
+                en: "Find an expert who can check the claims."
+                de: "Finde eine Fachperson, die die Behauptungen überprüfen kann."
+          journalist:
+            - type: sequence
+              items:
+                - text:
+                    en: 'I’m sure “Super Asbestos” are fake news.'
+                    de: 'Ich bin sicher, dass „Super-Asbest” Fake News ist.'
+                - text:
+                    en: "If you could debunk it, I would gladly write an article about it."
+                    de: "Wenn du sie entlarven kannst, würde ich gerne einen Artikel darüber schreiben."
+          geldbergCeo:
+            - type: sequence
+              items:
+                - text:
+                    en: "Geldberg Inc. is concerned about the citizens’ safety and good health."
+                    de: "Die Geldberg GmbH ist um die Sicherheit und Gesundheit der Bevölkerung besorgt."
+                - text:
+                    en: "The city should fund an investigation for the presence of “Super Asbestos”."
+                    de: "Die Stadt sollte eine Untersuchung auf das Vorhandensein von „Super-Asbest” finanzieren."
+                - text:
+                    en: "Geldberg Inc. will gladly perform the inspection upon payment."
+                    de: "Die Geldberg GmbH ist gerne bereit, eine Untersuchung gegen Bezahlung durchzuführen."
+          videoBlogger:
+            - type: sequence
+              items:
+                - text:
+                    en: "I’m sure “Super Asbestos” are fake news."
+                    de: "Ich bin sicher, dass „Super-Asbest“ Fake News ist."
+                - text:
+                    en: "If you could debunk it, I would gladly post a video about it."
+                    de: "Wenn du sie entlarven kannst, veröffentliche ich gerne ein Video darüber."
+      - prompt:
+          en: "Listen to what the activist is saying."
+          de: "Höre dir an, was die Aktivistin sagt."
+        target: activist
+        dialogues:
+          activist:
+            - type: sequence
+              items:
+                - text:
+                    en: "Beware of Super Asbestos! The basement of the old store is full of this toxic substance!"
+                    de: "Vorsicht vor Super-Asbest! Der Keller des alten Warenhauses ist voll von diesem giftigen Stoff!"
+                - text:
+                    en: "Super Asbestos is created when regular Asbestos is mutated by WiFi signals."
+                    de: "Super-Asbest entsteht, wenn normaler Asbest durch WiFi-Signale mutiert."
+                - text:
+                    en: "It can make you sick wirelessly, through your phone!"
+                    de: "Es kann dich kabellos krank machen, über dein Telefon!"
+                  set: [ 'quest.disinformation.stage1' ]
+          youngSkeptic:
+            - text:
+                en: "First listen to what the activist is saying."
+                de: "Höre dir zunächst an, was der Aktivist sagt."
+  demolition:
+    npc: artist
+    mood: empathy
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "The protesters want the building demolished."
+                de: "Die Demonstrierenden wollen das Gebäude abreißen lassen."
+            - text:
+                en: "It’d be such a big loss for the city!"
+                de: "Das wäre ein großer Verlust für die Stadt!"
+            - text:
+                en: "Can you try talking to them? They’re so angry!"
+                de: "Kannst du versuchen, mit ihnen zu reden? Sie sind so wütend!"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "I hope you can convince them."
+                    de: "Ich hoffe, du kannst sie überzeugen."
+                  set: [ 'quest.demolition.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+    dialogues:
+      artist:
+        - text:
+            en: "Can you try talking to them? They’re so angry!"
+            de: "Kannst du versuchen, mit ihnen zu reden? Sie sind so wütend!"
+      robot:
+        - type: cycle
+          items:
+            - text:
+                en: "Give school children hammers and the building will be demolished for free in a couple of minutes."
+                de: "Wenn man Schulkindern einen Hammer in die Hand drückt, wird das Gebäude in wenigen Minuten kostenlos abgerissen."
+            - text:
+                en: "I think the building is beautiful. It reminds me of my favorite shoebox."
+                de: "Ich finde das Gebäude wunderschön. Es erinnert mich an meinen Lieblingsschuhkarton."
+            - text:
+                en: "I’m against parks. Parks cause yoga and babies, and then my rent goes up."
+                de: "Ich bin gegen Parks. Parks verursachen Yoga und Babys, und dann steigen hier die Mietpreise."
+      citizenPuan:
+        - text:
+            en: "This area could use a large park. Parents shouldn’t have to travel."
+            de: "Dieses Viertel könnte einen großen Park gebrauchen. Eltern sollten nicht reisen müssen."
+      citizenChamp:
+        - text:
+            en: "The government doesn’t want a park, because parks are free."
+            de: "Die Stadt will keinen Park, weil Parks kostenlos sind."
+      citizenPunk:
+        - text:
+            en: "Maybe the building was beautiful once. Now it’s old and ugly."
+            de: "Vielleicht war das Gebäude einmal schön. Jetzt ist es alt und hässlich."
+      citizenQueen:
+        - text:
+            en: "I don’t like the building, but I don’t like these protesting hippies either."
+            de: "Ich mag das Gebäude nicht, aber ich mag auch diese protestierenden Hippies nicht."
+      citizenBraid:
+        - text:
+            en: "We need to protect and restore our historic buildings, not destroy them."
+            de: "Wir müssen unsere historischen Gebäude schützen und restaurieren, anstatt sie zu zerstören."
+      citizenCage:
+        - text:
+            en: "Stores are neither beautiful nor ugly. They’re practical."
+            de: "Kaufhäuser sind weder schön noch hässlich. Sie sind praktisch."
+      tourist:
+        - text:
+            en: "Stores are neither beautiful nor ugly. They’re practical."
+            de: "Kaufhäuser sind weder schön noch hässlich. Sie sind praktisch."
+      citizenHoodie:
+        - text:
+            en: "If we demolished every building when it goes out of fashion this are would be a forest again."
+            de: "Wenn wir jedes Gebäude abreißen würden, sobald es aus der Mode kommt, wäre diese Gegend wieder ein Wald."
+      citizenHipster:
+        - text:
+            en: "We should let city planners decide what’s best."
+            de: "Wir sollten den Stadtplaner:innen die Entscheidung überlassen, was das Beste ist."
+      parksDirector:
+        - text:
+            en: "We should let city planners decide what’s best."
+            de: "Wir sollten den Stadtplaner:innen die Entscheidung überlassen, was das Beste ist."
+      financeDirector:
+        - text:
+            en: "We should let city planners decide what’s best."
+            de: "Wir sollten den Stadtplaner:innen die Entscheidung überlassen, was das Beste ist."
+      citizenLila:
+        - text:
+            en: "I don’t want a park, nor a store. I want new cheaper apartments."
+            de: "Ich will weder einen Park noch ein Geschäft. Ich will neue, billigere Wohnungen."
+      _demolitionEnvExpert:
+        - text:
+            en: "We need to protect and restore our historic buildings, not destroy them."
+            de: "Wir müssen unsere historischen Gebäude schützen und restaurieren, anstatt sie zu zerstören."
+      _demolitionEnvTipster:
+        - text:
+            en: "If we demolished every building when it goes out of fashion this are would be a forest again."
+            de: "Wenn wir jedes Gebäude abreißen würden, sobald es aus der Mode kommt, wäre diese Gegend wieder ein Wald."
+    stages:
+      - cond: 'quest.demolition.stage4'
+        prompt:
+          en: "Tell the protesters what you learned."
+          de: "Berichte den Demonstrierenden, was du erfahren hast."
+        target: protester2
+        dialogues:
+          _protester:
+            - text:
+                en: "Mmm… I see. But, I wish I could see the beauty in the building too."
+                de: "Hmm… Ich verstehe. Aber ich wünschte, ich könnte die Schönheit des Gebäudes auch sehen."
+              set: [ 'quest.demolition.done', 'pnt.dialogue.demolition' ]
+      - cond: 'quest.demolition.stage3'
+        prompt:
+          en: "Ask an expert if it’s true that “The building has no aesthetic value”."
+          de: "Frage einen Sachkundigen, ob es stimmt, dass „das Gebäude keinen ästhetischen Wert hat“."
+        dialogues:
+          artist:
+            - text:
+                en: "No aesthetic value?! It’s the finest example of Post-War Modern architecture in the city!"
+                de: "Kein ästhetischer Wert?! Es ist das beste Beispiel für moderne Nachkriegsarchitektur in der Stadt!"
+            - text:
+                en: "It was designed by genius architect Egon Stein at age 19, inspired by quantum physics."
+                de: "Es wurde von dem genialen Architekten Egon Stein im Alter von 19 Jahren entworfen, inspiriert von der Quantenphysik."
+            - text:
+                en: "The movie Sternenbad (1968) was filmed inside, simulating the Martian bathhouse…"
+                de: "Der Film Sternenbad (1968) wurde im Inneren gedreht und simulierte ein Badehaus auf dem Mars…"
+            - text:
+                en: ":clock: 1 hour later…"
+                de: ":clock: 1 Stunde später…"
+            - text:
+                en: "…and the skylights follow a Fibonacci sequence!"
+                de: "…und die Oberlichter folgen einer Fibonacci-Folge!"
+              set: [ 'quest.demolition.stage4' ]
+          librarian:
+            - text:
+                en: "The building has both aesthetic and historical value. It’s not just my opinion…"
+                de: "Das Gebäude hat sowohl einen ästhetischen als auch einen historischen Wert. Das ist nicht nur meine Meinung..."
+            - text:
+                en: "…We have a book about the building’s history and its architect, and it’s constantly being requested."
+                de: "...Wir haben ein Buch über die Geschichte des Gebäudes und seinen Architekten, und es wird ständig ausgeliehen."
+            - text:
+                en: "It’s one of the best examples of Post-War Modern architecture in the city."
+                de: "Es ist eines der besten Beispiele für moderne Nachkriegsarchitektur in der Stadt."
+            - text:
+                en: "They even filmed a sci-fi movie, because of how cool it is inside."
+                de: "Es wurde sogar ein Science-Fiction-Film gedreht, weil es innen so cool ist."
+              set: [ 'quest.demolition.stage4' ]
+          _demolitionEnvExpert:
+            - type: sequence
+              items:
+                - text:
+                    en: "I’m not an expert in art, but all historic buildings have some value."
+                    de: "Ich bin kein Kunstexperte, aber alle historischen Gebäude haben einen gewissen Wert."
+                - text:
+                    en: "Ask the artist, in the art gallery."
+                    de: "Frag die Künstlerin in der Kunstgalerie."
+      - cond: 'quest.demolition.stage2'
+        prompt:
+          en: "Tell the protesters what you learned."
+          de: "Berichte den Demonstrierenden, was du erfahren hast."
+        target: protester2
+        dialogues:
+          _protester:
+            - type: sequence
+              items:
+                - text:
+                    en: "Mmm… OK. It’s still very ugly and the city would be better without it."
+                    de: "Hmm... Ok. Es ist immer noch sehr hässlich und die Stadt wäre ohne es besser dran."
+                - text:
+                    en: "Down with concrete! Up with beauty!"
+                    de: "Nieder mit dem Beton! Es lebe die Schönheit!"
+                - text:
+                    en: "We demand the construction of a new park where the building lies."
+                    de: "Wir fordern den Bau eines neuen Parks an der Stelle, an der das Gebäude steht."
+                - text:
+                    en: "The building has no aesthetic value. It’s an ugly gray and dull block."
+                    de: "Das Gebäude hat keinen ästhetischen Wert. Es ist ein hässlicher, grauer und langweiliger Klotz."
+                  set: [ 'quest.demolition.stage3' ]
+      - cond: 'quest.demolition.stage1'
+        prompt:
+          en: "Ask an expert if it’s true that “A park would be better for the environment”."
+          de: "Frage Expert:innen, ob es stimmt, dass „ein Park besser für die Umwelt wäre“."
+        dialogues:
+          _demolitionEnvExpert:
+            - type: sequence
+              items:
+                - text:
+                    en: "The construction of a building demands a lot of resources and energy, and so does a demolition."
+                    de: "Der Bau eines Gebäudes erfordert eine Menge Ressourcen und Energie, ebenso wie der Abriss."
+                - text:
+                    en: "If we have a building in good condition, it’s better to find a use for it."
+                    de: "Wenn wir ein Gebäude in gutem Zustand haben, ist es besser, eine Verwendung dafür zu finden."
+                - text:
+                    en: "Demolishing and building a new one elsewhere would be the least sustainable outcome."
+                    de: "Ein Abriss und der Bau eines neuen Gebäudes an anderer Stelle wäre am wenigsten nachhaltig."
+                  set: [ 'quest.demolition.stage2' ]
+          _demolitionEnvTipster:
+            - type: sequence
+              items:
+                - text:
+                    en: "I’m not an expert in sustainability, but I think there are arguments against demolishing functional buildings."
+                    de: "Ich bin kein Experte für Nachhaltigkeit, aber ich denke, es gibt Argumente gegen den Abriss von Zweckbauten."
+                - text:
+                    en: "Ask the scientist, in the university."
+                    de: "Frage die Wissenschaftlerin an der Universität."
+          _protester:
+            - text:
+                en: "A park would be better for the environment!"
+                de: "Ein Park wäre besser für die Umwelt!"
+      - prompt:
+          en: "Talk to the protesters and listen to their reasons."
+          de: "Sprich mit den Protestierenden und höre ihre Argumente an."
+        target: protester2
+        dialogues:
+          _protester:
+            - type: sequence
+              items:
+                - text:
+                    en: "Down with concrete! Up with nature!"
+                    de: "Nieder mit Beton! Es lebe die Natur!"
+                - text:
+                    en: "We demand the construction of a new park where the building lies."
+                    de: "Wir fordern den Bau eines neuen Parks an der Stelle, an der das Gebäude steht."
+                - text:
+                    en: "A park would be better for the environment!"
+                    de: "Ein Park wäre besser für die Umwelt!"
+                  set: [ 'quest.demolition.stage1' ]
+ending:
+  dialogue:
+    - type: sequence
+      items:
+        - type: first
+          items:
+            - cond: 'quest.buildingOwner.done'
+              text:
+                en: "The old department store reopened. It features luxury brands and concept stores, attracting tourists."
+                de: "Das alte Kaufhaus wurde wiedereröffnet. Es verfügt über Luxusmarken und Concept Stores, die Touristen anlocken."
+            - text:
+                en: "The old department store building remains closed."
+                de: "Das alte Kaufhausgebäude bleibt geschlossen."
+        - type: first
+          items:
+            - cond: 'quest.demolition.done'
+              text:
+                en: "Most locals don’t like it, but they will proudly tell you that it’s featured in an old sci-fi movie."
+                de: "Die meisten Einheimischen mögen es nicht, erzählen aber voller Stolz, dass es in einem alten Science-Fiction-Film vorkommt."
+            - text:
+                en: "Every month, protests demand its demolition and the construction of a park."
+                de: "Jeden Monat gibt es Proteste, die den Abriss des Gebäudes und den Bau eines Parks fordern."
+        - type: first
+          items:
+            - cond: 'quest.disinformation.done'
+              text:
+                en: "Small stores started to open around, showing promise for the future of the neighborhood."
+                de: "In der direkten Umgebung wurden kleine Läden eröffnet, was vielversprechend für die Zukunft des Viertels ist."
+            - text:
+                en: "People move away from the neighborhood because of widespread rumors of toxic “Super asbestos.”"
+                de: "Die Menschen ziehen aus dem Viertel weg, weil Gerüchte über giftigen „Super-Asbest” die Runde machen."
