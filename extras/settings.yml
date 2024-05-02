@@ -11,6 +11,11 @@ game:
         x: 0
         y: -0.8
       zoom: 1
+    drone:
+      offset:
+        x: 0
+        y: 0
+      zoom: 0.5
 textures:
   bundles:
     - name: 'town-view'
