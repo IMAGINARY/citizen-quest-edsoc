@@ -53,7 +53,7 @@ npcs:
       en: Security guard
       de: Sicherheitspersonal
     spawn: {x: 1044, y: 2470}
-    type: citizenRanger
+    type: privateSecurityMan
     dialogue:
       - type: sequence
         items:
@@ -68,7 +68,7 @@ npcs:
       en: "Geldberg CEO"
       de: "Geldberg-CEO"
     spawn: {x: 777, y: 2525}
-    type: museumDirector
+    type: hologramCeo
     dialogue:
       - type: cycle
         items:
@@ -111,7 +111,6 @@ npcs:
     name:
       en: Engineer
       de: Ingenieur
-    type: constructionWorker
     spawn: {x: 1615, y: 1632}
     actAs:
       - '_asbestosMythDebunker'
@@ -137,7 +136,6 @@ npcs:
     name:
         en: Videoblogger
         de: Videoblogger
-    type: citizenCool
     spawn: {x: 4538, y: 3163}
     dialogue:
       - type: cycle
@@ -291,12 +289,37 @@ npcs:
     name:
       en: "Activist"
       de: "Aktivist"
-    type: bear
     spawn: {x: 4621, y: 2324}
     dialogue:
       - text:
           en: "Beware of Super Asbestos!"
           de: "Vorsicht vor Super-Asbest!"
+  protester1:
+    name:
+      en: "Protesters"
+      de: "Protestierende"
+    spawn: { x: 3671, y: 2657 }
+    type: citizenTennis
+    actAs: ['_protester']
+  protester2:
+    name:
+      en: "Protesters"
+      de: "Protestierende"
+    spawn: { x: 3847, y: 2681 }
+    type: citizenRibbon
+    actAs: ['_protester']
+  protester3:
+    name:
+      en: "Protesters"
+      de: "Protestierende"
+    spawn: { x: 3987, y: 2656 }
+    type: citizenDough
+    actAs: ['_protester']
+dialogues:
+  _protester:
+    - text:
+        en: "Down with concrete! Up with nature!"
+        de: "Nieder mit Beton! Es lebe die Natur!"
 quests:
   buildingOwner:
     npc: mayor
@@ -374,7 +397,7 @@ quests:
                 - text:
                     en: "We’re excited to announce the building’s re-opening!"
                     de: "Kündigen an: Wir freuen uns auf Wiedereröffnung des Gebäudes!"
-                  set: [ 'quest.buildingOwner.done', 'pnt.research.buildingOwner' ]
+                  set: [ 'quest.buildingOwner.done', 'pnt.investigate.buildingOwner' ]
           journalist:
             - text:
                 en: "The building is owned by Geldberg Inc. You should ask in their offices."
@@ -494,27 +517,27 @@ quests:
         - text:
             en: "Why are we wasting time debunking “Super asbestos”? We need to tax dumb people."
             de: "Warum verschwenden wir Zeit mit der Entlarvung von „Super-Asbest“? Wir sollten dumme Menschen besteuern."
-      citizenHoodie:
+      citizenOpen1:
         - text:
             en: "I can’t believe people believe in Super Asbestos."
             de: "Ich kann nicht glauben, dass Menschen an „Super-Asbest“ glauben."
-      citizenBraid:
+      citizenOpen2:
         - text:
             en: "It’s probably a false rumor, but I keep my distance from the store just in case."
             de: "Wahrscheinlich handelt es sich um ein falsches Gerücht, aber ich halte mich vorsichtshalber von dem Geschäft fern."
-      citizenLila:
+      citizenDisillusioned2:
         - text:
             en: "Should I be worried about Super Asbestos?"
             de: "Sollte ich mir wegen „Super-Asbest“ Sorgen machen?"
-      citizenCage:
+      citizenInvolved2:
         - text:
             en: "It’s probably a false rumor. But it could be true. 50/50."
             de: "Wahrscheinlich ist es ein falsches Gerücht. Aber es könnte auch wahr sein. 50/50."
-      tourist:
+      citizenDetached1:
         - text:
             en: "Should I be worried about Super Asbestos?"
             de: "Sollte ich mir wegen „Super-Asbest“ Sorgen machen?"
-      financeDirector:
+      citizenDetached2:
         - text:
             en: "“Super asbestos” is clearly fake news."
             de: "„Super-Asbest“ ist eindeutig Fake News."
@@ -751,51 +774,51 @@ quests:
             - text:
                 en: "I’m against parks. Parks cause yoga and babies, and then my rent goes up."
                 de: "Ich bin gegen Parks. Parks verursachen Yoga und Babys, und dann steigen hier die Mietpreise."
-      citizenPuan:
+      citizenInvolved1:
         - text:
             en: "This area could use a large park. Parents shouldn’t have to travel."
             de: "Dieses Viertel könnte einen großen Park gebrauchen. Eltern sollten nicht reisen müssen."
-      citizenChamp:
+      citizenDisillusioned1:
         - text:
             en: "The government doesn’t want a park, because parks are free."
             de: "Die Stadt will keinen Park, weil Parks kostenlos sind."
-      citizenPunk:
+      citizenAngry1:
         - text:
             en: "Maybe the building was beautiful once. Now it’s old and ugly."
             de: "Vielleicht war das Gebäude einmal schön. Jetzt ist es alt und hässlich."
-      citizenQueen:
+      citizenAngry2:
         - text:
             en: "I don’t like the building, but I don’t like these protesting hippies either."
             de: "Ich mag das Gebäude nicht, aber ich mag auch diese protestierenden Hippies nicht."
-      citizenBraid:
+      citizenOpen2:
         - text:
             en: "We need to protect and restore our historic buildings, not destroy them."
             de: "Wir müssen unsere historischen Gebäude schützen und restaurieren, anstatt sie zu zerstören."
-      citizenCage:
+      citizenInvolved2:
         - text:
             en: "Stores are neither beautiful nor ugly. They’re practical."
             de: "Kaufhäuser sind weder schön noch hässlich. Sie sind praktisch."
-      tourist:
+      citizenDetached1:
         - text:
             en: "Stores are neither beautiful nor ugly. They’re practical."
             de: "Kaufhäuser sind weder schön noch hässlich. Sie sind praktisch."
-      citizenHoodie:
+      citizenOpen1:
         - text:
             en: "If we demolished every building when it goes out of fashion this are would be a forest again."
             de: "Wenn wir jedes Gebäude abreißen würden, sobald es aus der Mode kommt, wäre diese Gegend wieder ein Wald."
-      citizenHipster:
+      citizenEstablished1:
         - text:
             en: "We should let city planners decide what’s best."
             de: "Wir sollten den Stadtplaner:innen die Entscheidung überlassen, was das Beste ist."
-      parksDirector:
+      citizenEstablished2:
         - text:
             en: "We should let city planners decide what’s best."
             de: "Wir sollten den Stadtplaner:innen die Entscheidung überlassen, was das Beste ist."
-      financeDirector:
+      citizenDetached2:
         - text:
             en: "We should let city planners decide what’s best."
             de: "Wir sollten den Stadtplaner:innen die Entscheidung überlassen, was das Beste ist."
-      citizenLila:
+      citizenDisillusioned2:
         - text:
             en: "I don’t want a park, nor a store. I want new cheaper apartments."
             de: "Ich will weder einen Park noch ein Geschäft. Ich will neue, billigere Wohnungen."
@@ -816,45 +839,49 @@ quests:
         dialogues:
           _protester:
             - text:
-                en: "Mmm… I see. But, I wish I could see the beauty in the building too."
+                en: "Mmm… I understand. I just wish I could see the beauty in the building too."
                 de: "Hmm… Ich verstehe. Aber ich wünschte, ich könnte die Schönheit des Gebäudes auch sehen."
-              set: [ 'quest.demolition.done', 'pnt.dialogue.demolition' ]
+              set: [ 'quest.demolition.done', 'pnt.engage.demolition' ]
       - cond: 'quest.demolition.stage3'
         prompt:
           en: "Ask an expert if it’s true that “The building has no aesthetic value”."
           de: "Frage einen Sachkundigen, ob es stimmt, dass „das Gebäude keinen ästhetischen Wert hat“."
         dialogues:
           artist:
-            - text:
-                en: "No aesthetic value?! It’s the finest example of Post-War Modern architecture in the city!"
-                de: "Kein ästhetischer Wert?! Es ist das beste Beispiel für moderne Nachkriegsarchitektur in der Stadt!"
-            - text:
-                en: "It was designed by genius architect Egon Stein at age 19, inspired by quantum physics."
-                de: "Es wurde von dem genialen Architekten Egon Stein im Alter von 19 Jahren entworfen, inspiriert von der Quantenphysik."
-            - text:
-                en: "The movie Sternenbad (1968) was filmed inside, simulating the Martian bathhouse…"
-                de: "Der Film Sternenbad (1968) wurde im Inneren gedreht und simulierte ein Badehaus auf dem Mars…"
-            - text:
-                en: ":clock: 1 hour later…"
-                de: ":clock: 1 Stunde später…"
-            - text:
-                en: "…and the skylights follow a Fibonacci sequence!"
-                de: "…und die Oberlichter folgen einer Fibonacci-Folge!"
-              set: [ 'quest.demolition.stage4' ]
+            - type: sequence
+              items:
+                - text:
+                    en: "No aesthetic value?! It’s the finest example of Post-War Modern architecture in the city!"
+                    de: "Kein ästhetischer Wert?! Es ist das beste Beispiel für moderne Nachkriegsarchitektur in der Stadt!"
+                - text:
+                    en: "It was designed by genius architect Egon Stein at age 19, inspired by quantum physics."
+                    de: "Es wurde von dem genialen Architekten Egon Stein im Alter von 19 Jahren entworfen, inspiriert von der Quantenphysik."
+                - text:
+                    en: "The movie Sternenbad (1968) was filmed inside, simulating the Martian bathhouse…"
+                    de: "Der Film Sternenbad (1968) wurde im Inneren gedreht und simulierte ein Badehaus auf dem Mars…"
+                - text:
+                    en: ":clock: 1 hour later…"
+                    de: ":clock: 1 Stunde später…"
+                - text:
+                    en: "…and the skylights follow a Fibonacci sequence!"
+                    de: "…und die Oberlichter folgen einer Fibonacci-Folge!"
+                  set: [ 'quest.demolition.stage4' ]
           librarian:
-            - text:
-                en: "The building has both aesthetic and historical value. It’s not just my opinion…"
-                de: "Das Gebäude hat sowohl einen ästhetischen als auch einen historischen Wert. Das ist nicht nur meine Meinung..."
-            - text:
-                en: "…We have a book about the building’s history and its architect, and it’s constantly being requested."
-                de: "...Wir haben ein Buch über die Geschichte des Gebäudes und seinen Architekten, und es wird ständig ausgeliehen."
-            - text:
-                en: "It’s one of the best examples of Post-War Modern architecture in the city."
-                de: "Es ist eines der besten Beispiele für moderne Nachkriegsarchitektur in der Stadt."
-            - text:
-                en: "They even filmed a sci-fi movie, because of how cool it is inside."
-                de: "Es wurde sogar ein Science-Fiction-Film gedreht, weil es innen so cool ist."
-              set: [ 'quest.demolition.stage4' ]
+            - type: sequence
+              items:
+                - text:
+                    en: "The building has both aesthetic and historical value. It’s not just my opinion…"
+                    de: "Das Gebäude hat sowohl einen ästhetischen als auch einen historischen Wert. Das ist nicht nur meine Meinung..."
+                - text:
+                    en: "…We have a book about the building’s history and its architect, and it’s constantly being requested."
+                    de: "...Wir haben ein Buch über die Geschichte des Gebäudes und seinen Architekten, und es wird ständig ausgeliehen."
+                - text:
+                    en: "It’s one of the best examples of Post-War Modern architecture in the city."
+                    de: "Es ist eines der besten Beispiele für moderne Nachkriegsarchitektur in der Stadt."
+                - text:
+                    en: "They even filmed a sci-fi movie, because of how cool it is inside."
+                    de: "Es wurde sogar ein Science-Fiction-Film gedreht, weil es innen so cool ist."
+                  set: [ 'quest.demolition.stage4' ]
           _demolitionEnvExpert:
             - type: sequence
               items:
