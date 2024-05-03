@@ -323,12 +323,16 @@ dialogues:
 scenery:
   protesters:
     spawn: { x: 3860, y: 2665}
+    cond: '^quest.demolition.done'
   activistPoster:
     spawn: { x: 4602, y: 2291 }
+    cond: '^quest.disinformation.done'
   boardedDoors:
     spawn: { x: 3842, y: 2579 }
-#  comingSoon:
-#    spawn: { x: 4229, y: 2357 }
+    cond: '^quest.buildingOwner.done'
+  comingSoon:
+    spawn: { x: 4229, y: 2357 }
+    cond: 'quest.buildingOwner.done'
   ringlight:
     spawn: { x: 2614, y: 3264 }
   camera:
