@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253.075 262.968">
+  <g>
+    <circle cx="111.788" cy="111.788" r="106.788" fill="#ffeb79" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <g id="b" data-name="line">
+      <circle cx="126.947" cy="83.776" r="38.104" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.206"/>
+      <circle cx="126.947" cy="83.776" r="29.067" transform="translate(-11.962 145.73) rotate(-57.459)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.206"/>
+      <path d="M93.99,121.5l11.469,7.318-27.324,42.824c-1.952,3.06-6.102,3.901-9.269,1.881h0c-3.167-2.021-4.152-6.139-2.2-9.199l27.324-42.823Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.207"/>
+    </g>
+  </g>
+  <g>
+    <circle cx="199.516" cy="209.409" r="49.059" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="9"/>
+    <g>
+      <path d="M165.351,205.425h11.647v-11.647h9.108v11.647h11.647v8.362h-11.647v11.646h-9.108v-11.646h-11.647v-8.362Z" fill="#000" stroke-width="0"/>
+      <path d="M215.744,193.479h-7.167v-8.362h16.873v49.799h-9.706v-41.437Z" fill="#000" stroke-width="0"/>
+    </g>
+  </g>
+</svg>

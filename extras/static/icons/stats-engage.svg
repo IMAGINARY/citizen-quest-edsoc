@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253.075 262.968">
+  <g>
+    <circle cx="111.788" cy="111.788" r="106.788" fill="#ffeb79" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <g id="b" data-name="line">
+      <path d="M89.906,72.21c11.518-43.687,86.855-29.263,58.682,40.678-36.341,89.138-79.384,62.262-71.757,33.18" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.981"/>
+      <path d="M112.266,93.068c11.054,17.433,18.422,33.725,3.479,40.47-3.479,1.428-7.164,1.029-10.914,2.923-3.821,1.799-4.531,3.304-9.062,8.181-6.382,5.137-14.372-3.852-9.858-9.184,7.653-8.457,16.058-9.78,11.622-17.952-3.035-5.491-1.012-13.153,8.717-10.351" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.981"/>
+      <path d="M98.765,82.951c9.898-39.536,61.845-25.548,37.955,27.69" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.981"/>
+    </g>
+  </g>
+  <g>
+    <circle cx="199.516" cy="209.409" r="49.059" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="9"/>
+    <g>
+      <path d="M165.351,205.425h11.647v-11.647h9.108v11.647h11.647v8.362h-11.647v11.646h-9.108v-11.646h-11.647v-8.362Z" fill="#000" stroke-width="0"/>
+      <path d="M215.744,193.479h-7.167v-8.362h16.873v49.799h-9.706v-41.437Z" fill="#000" stroke-width="0"/>
+    </g>
+  </g>
+</svg>
