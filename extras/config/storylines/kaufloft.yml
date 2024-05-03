@@ -136,7 +136,7 @@ npcs:
     name:
         en: Videoblogger
         de: Videoblogger
-    spawn: {x: 4538, y: 3163}
+    spawn: {x: 2677, y: 3231}
     dialogue:
       - type: cycle
         items:
@@ -329,6 +329,12 @@ scenery:
     spawn: { x: 3842, y: 2579 }
 #  comingSoon:
 #    spawn: { x: 4229, y: 2357 }
+  ringlight:
+    spawn: { x: 2614, y: 3264 }
+  camera:
+    spawn: { x: 2769, y: 3275 }
+  statue:
+    spawn: { x: 3224, y: 3422 }
 quests:
   buildingOwner:
     npc: mayor
