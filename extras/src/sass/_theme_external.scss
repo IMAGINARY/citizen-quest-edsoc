@@ -9,8 +9,23 @@ $c-edsoc-yellow: #ffeb78;
   }
 }
 
-.map-app .inclusion-bar {
-  display: none;
+.map-app {
+  &:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 1%;
+    background-image: url('../../static/ui/skills-overlay.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 85%;
+  }
+
+  .inclusion-bar {
+    display: none;
+  }
 }
 
 .intro-screen {
@@ -24,3 +39,5 @@ $c-edsoc-yellow: #ffeb78;
 .decision-screen {
   background-color: $c-edsoc-yellow;
 }
+
+
