@@ -289,7 +289,7 @@ npcs:
     name:
       en: "Activist"
       de: "Aktivist"
-    spawn: {x: 4621, y: 2324}
+    spawn: {x: 4564, y: 2364}
     dialogue:
       - text:
           en: "Beware of Super Asbestos!"
@@ -305,14 +305,14 @@ npcs:
     name:
       en: "Protesters"
       de: "Protestierende"
-    spawn: { x: 3847, y: 2681 }
+    spawn: { x: 3848, y: 2703 }
     type: citizenRibbon
     actAs: ['_protester']
   protester3:
     name:
       en: "Protesters"
       de: "Protestierende"
-    spawn: { x: 3987, y: 2656 }
+    spawn: { x: 4044, y: 2634 }
     type: citizenDough
     actAs: ['_protester']
 dialogues:
@@ -320,6 +320,15 @@ dialogues:
     - text:
         en: "Down with concrete! Up with nature!"
         de: "Nieder mit Beton! Es lebe die Natur!"
+scenery:
+  protesters:
+    spawn: { x: 3860, y: 2665}
+  activistPoster:
+    spawn: { x: 4602, y: 2291 }
+  boardedDoors:
+    spawn: { x: 3842, y: 2579 }
+#  comingSoon:
+#    spawn: { x: 4229, y: 2357 }
 quests:
   buildingOwner:
     npc: mayor
@@ -464,7 +473,7 @@ quests:
                 de: "Recherchiere in der Bücherhalle und finde heraus, wem das Gebäude gehört."
   disinformation:
     npc: youngSkeptic
-    mood: information
+    mood: exclamation
     available:
       dialogue:
         - type: sequence
@@ -729,7 +738,7 @@ quests:
                 de: "Höre dir zunächst an, was der Aktivist sagt."
   demolition:
     npc: artist
-    mood: empathy
+    mood: exclamation
     available:
       dialogue:
         - type: sequence

@@ -43,6 +43,14 @@ textures:
           srcs: 'target-arrow.png'
         - name: 'guide-arrow'
           srcs: 'guide-arrow.png'
+        - name: 'protesters'
+          srcs: 'protesters.png'
+        - name: 'activistPoster'
+          srcs: 'activist-poster.png'
+        - name: 'boardedDoors'
+          srcs: 'boarded-doors.png'
+        - name: 'comingSoon'
+          srcs: 'coming-soon.png'
 players:
   1:
     color: '#27a6a8'
