@@ -60,13 +60,13 @@ textures:
           srcs: 'statue.png'
 players:
   1:
-    color: '#27a6a8'
+    color: '#43f56e'
     spawn: { x: 3041, y: 2947 }
   2:
-    color: '#d331a3'
+    color: '#625eff'
     spawn: { x: 3212, y: 2947 }
   3:
-    color: '#ea7a24'
+    color: '#db6bf8'
     spawn: { x: 3383, y: 2640 }
 storylines:
   - kaufloft
