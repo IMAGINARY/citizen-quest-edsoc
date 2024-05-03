@@ -1,6 +1,7 @@
 game:
   languages: ['de', 'en']
   canSwitchQuests: false
+  duration: 480
   cameraPresets:
     walking:
       offset:
