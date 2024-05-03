@@ -75,6 +75,9 @@ i18n:
     defaultPrompt:
       en: 'Help revive the neighborhood. Talk to citizens with a :speech_bubble: to get quests.'
       de: 'Hilf, das Viertel wiederzubeleben.<br>Sprich mit Bürger:innen mit einer&nbsp;:speech_bubble:, um Aufgaben zu erhalten.'
+    decisionMade:
+      en: ''
+      de: ''
 #    title:
 #      en: 'Data 🩷 Quest'
 #    pressStart:
