@@ -67,7 +67,7 @@ npcs:
     name:
       en: "Geldberg CEO"
       de: "Geldberg-CEO"
-    spawn: {x: 777, y: 2525}
+    spawn: {x: 767, y: 2632}
     type: hologramCeo
     dialogue:
       - type: cycle
@@ -190,7 +190,7 @@ npcs:
       en: "Neighbor"
       de: "Nachbarin"
     type: citizenPuan
-    spawn: {x: 3429, y: 1465}
+    spawn: {x: 3543, y: 1535}
     dialogue:
       - text:
           en: "Living next to a large store means noise, trash, and rats. I hate it."
@@ -220,7 +220,7 @@ npcs:
       en: "Neighbor"
       de: "Nachbarin"
     type: parksDirector
-    spawn: {x: 3090, y: 3526}
+    spawn: {x: 3881, y: 3518}
     dialogue:
       - text:
           en: "I have confidence in the new mayor."
@@ -280,7 +280,7 @@ npcs:
       en: "Neighbor"
       de: "Nachbarin"
     type: citizenQueen
-    spawn: {x: 5136, y: 3385}
+    spawn: {x: 4932, y: 3324}
     dialogue:
       - text:
           en: "I’m afraid that if the building remains vacant, people will squat in it."
