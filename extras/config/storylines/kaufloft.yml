@@ -8,7 +8,7 @@ npcs:
   mayor:
     name:
       en: Mayor
-      de: Bürgermeister
+      de: Bürgermeisterin
     spawn: {x: 2130, y: 3396}
     actAs:
       - '_asbestosMythDebunker'
@@ -327,12 +327,15 @@ scenery:
   activistPoster:
     spawn: { x: 4602, y: 2291 }
     cond: '^quest.disinformation.done'
+    layer: back
   boardedDoors:
     spawn: { x: 3842, y: 2579 }
     cond: '^quest.buildingOwner.done'
+    layer: back
   comingSoon:
     spawn: { x: 4229, y: 2357 }
     cond: 'quest.buildingOwner.done'
+    layer: back
   ringlight:
     spawn: { x: 2614, y: 3264 }
   camera:
