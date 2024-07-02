@@ -9,7 +9,7 @@ npcs:
     name:
       en: Mayor
       de: Bürgermeisterin
-    spawn: {x: 2130, y: 3396}
+    spawn: { x: 2130, y: 3396 }
     actAs:
       - '_asbestosMythDebunker'
       - '_demolitionEnvTipster'
@@ -22,7 +22,7 @@ npcs:
       en: Librarian
       de: Bibliothekarin
     type: citizenAqua
-    spawn: {x: 4183, y: 874}
+    spawn: { x: 4183, y: 874 }
     actAs:
       - '_asbestosMythDebunker'
     dialogue:
@@ -41,7 +41,7 @@ npcs:
     name:
       en: Journalist
       de: Journalist
-    spawn: {x: 5581, y: 2807}
+    spawn: { x: 5581, y: 2807 }
     actAs:
       - '_demolitionEnvTipster'
     dialogue:
@@ -52,7 +52,7 @@ npcs:
     name:
       en: Security guard
       de: Sicherheitspersonal
-    spawn: {x: 1044, y: 2470}
+    spawn: { x: 1044, y: 2470 }
     type: privateSecurityMan
     dialogue:
       - type: sequence
@@ -67,7 +67,8 @@ npcs:
     name:
       en: "Geldberg CEO"
       de: "Geldberg-CEO"
-    spawn: {x: 767, y: 2632}
+    spawn: { x: 767, y: 2632 }
+    cond: 'global.ceoVisible'
     type: hologramCeo
     dialogue:
       - type: cycle
@@ -85,7 +86,7 @@ npcs:
     name:
       en: "Young skeptic"
       de: "Junge Zweiflerin"
-    spawn: {x: 5192, y: 1985}
+    spawn: { x: 5192, y: 1985 }
     type: citizenCat
     dialogue:
       - text:
@@ -111,7 +112,7 @@ npcs:
     name:
       en: Engineer
       de: Ingenieur
-    spawn: {x: 1615, y: 1632}
+    spawn: { x: 1615, y: 1632 }
     actAs:
       - '_asbestosMythDebunker'
       - '_demolitionEnvExpert'
@@ -124,7 +125,7 @@ npcs:
       en: Scientist
       de: Wissenschaftlerin
     type: biologist
-    spawn: {x: 5299, y: 1178}
+    spawn: { x: 5299, y: 1178 }
     actAs:
       - '_asbestosMythDebunker'
       - '_demolitionEnvExpert'
@@ -134,9 +135,9 @@ npcs:
           de: "Unser Forschungsinstitut veranstaltete im alten Kaufhaus jedes Jahr eine Ausstellung über die biologische Vielfalt."
   videoBlogger:
     name:
-        en: Videoblogger
-        de: Videoblogger
-    spawn: {x: 2677, y: 3231}
+      en: Videoblogger
+      de: Videoblogger
+    spawn: { x: 2677, y: 3231 }
     dialogue:
       - type: cycle
         items:
@@ -160,7 +161,7 @@ npcs:
       en: Artist
       de: Künstlerin
     type: citizenWheelchair
-    spawn: {x: 5291, y: 2638}
+    spawn: { x: 5291, y: 2638 }
     dialogue:
       - text:
           en: "The foot traffic from the old store brought a lot of people to our art gallery."
@@ -170,7 +171,7 @@ npcs:
       en: "Neighbor"
       de: "Nachbar"
     type: citizenHoodie
-    spawn: {x: 5007, y: 1591}
+    spawn: { x: 5007, y: 1591 }
     dialogue:
       - text:
           en: "Buying online is cheaper, but I need a nice café and a movie theater."
@@ -180,7 +181,7 @@ npcs:
       en: "Neighbor"
       de: "Nachbarin"
     type: citizenBraid
-    spawn: {x: 2693, y: 1847}
+    spawn: { x: 2693, y: 1847 }
     dialogue:
       - text:
           en: "The city should repossess the old store and turn it into a huge library."
@@ -190,7 +191,7 @@ npcs:
       en: "Neighbor"
       de: "Nachbarin"
     type: citizenPuan
-    spawn: {x: 3543, y: 1535}
+    spawn: { x: 3543, y: 1535 }
     dialogue:
       - text:
           en: "Living next to a large store means noise, trash, and rats. I hate it."
@@ -200,7 +201,7 @@ npcs:
       en: "Neighbor"
       de: "Nachbar"
     type: citizenCage
-    spawn: {x: 2555, y: 2509}
+    spawn: { x: 2555, y: 2509 }
     dialogue:
       - text:
           en: "With the store closed, there are fewer cars and more birds."
@@ -210,7 +211,7 @@ npcs:
       en: "Neighbor"
       de: "Nachbar"
     type: citizenHipster
-    spawn: {x: 4750, y: 894}
+    spawn: { x: 4750, y: 894 }
     dialogue:
       - text:
           en: "The neighborhood doesn’t have a shoe store. I buy everything online, but not shoes!"
@@ -220,7 +221,7 @@ npcs:
       en: "Neighbor"
       de: "Nachbarin"
     type: parksDirector
-    spawn: {x: 3881, y: 3518}
+    spawn: { x: 3881, y: 3518 }
     dialogue:
       - text:
           en: "I have confidence in the new mayor."
@@ -230,7 +231,7 @@ npcs:
       en: "Tourist"
       de: "Tourist"
     type: tourist
-    spawn: {x: 2082, y: 1240}
+    spawn: { x: 2082, y: 1240 }
     dialogue:
       - text:
           en: "Reopening the store will be better for the whole neighborhood."
@@ -250,7 +251,7 @@ npcs:
       en: "Neighbor"
       de: "Nachbar"
     type: citizenChamp
-    spawn: {x: 1676, y: 972}
+    spawn: { x: 1676, y: 972 }
     dialogue:
       - text:
           en: "A large store means more tourists, which means expensive apartment rents."
@@ -260,7 +261,7 @@ npcs:
       en: "Neighbor"
       de: "Nachbarin"
     type: citizenLila
-    spawn: {x: 4550, y: 1477}
+    spawn: { x: 4550, y: 1477 }
     dialogue:
       - text:
           en: "I’m tired of taking the U-Bahn every time I need to go shopping."
@@ -270,7 +271,7 @@ npcs:
       en: "Neighbor"
       de: "Nachbar"
     type: citizenPunk
-    spawn: {x: 3762, y: 1407}
+    spawn: { x: 3762, y: 1407 }
     dialogue:
       - text:
           en: "When the department store was open, it was too expensive anyway. No loss."
@@ -280,7 +281,7 @@ npcs:
       en: "Neighbor"
       de: "Nachbarin"
     type: citizenQueen
-    spawn: {x: 4932, y: 3324}
+    spawn: { x: 4932, y: 3324 }
     dialogue:
       - text:
           en: "I’m afraid that if the building remains vacant, people will squat in it."
@@ -289,7 +290,8 @@ npcs:
     name:
       en: "Activist"
       de: "Aktivist"
-    spawn: {x: 4564, y: 2364}
+    spawn: { x: 4606, y: 2492 }
+    cond: '^quest.disinformation.done | (quest.disinformation.active & ^quest.disinformation.localDone)'
     dialogue:
       - text:
           en: "Beware of Super Asbestos!"
@@ -299,22 +301,77 @@ npcs:
       en: "Protesters"
       de: "Protestierende"
     spawn: { x: 3671, y: 2657 }
+    cond: '^quest.demolition.done'
     type: citizenTennis
-    actAs: ['_protester']
+    actAs: [ '_protester' ]
   protester2:
     name:
       en: "Protesters"
       de: "Protestierende"
     spawn: { x: 3848, y: 2703 }
+    cond: '^quest.demolition.done'
     type: citizenRibbon
-    actAs: ['_protester']
+    actAs: [ '_protester' ]
   protester3:
     name:
       en: "Protesters"
       de: "Protestierende"
     spawn: { x: 4044, y: 2634 }
+    cond: '^quest.greenRoof.done'
     type: citizenDough
-    actAs: ['_protester']
+    actAs: [ '_protester' ]
+  musicProducer:
+    name:
+      en: "Music producer"
+      de: "Musikproduzent"
+    spawn: { x: 4159, y: 2576 }
+    type: citizenCool
+    cond: '^(^quest.disinformation.done | (quest.disinformation.active & ^quest.disinformation.localDone))'
+    dialogue:
+      - text:
+          en: "Wow! They sound so good playing together!"
+          de: "Oh, wow! Sie klingen großartig zusammen!"
+  driver:
+    name:
+      en: Driver
+      de: Fahrerin
+    spawn: { x: 6098, y: 3481 }
+    cond: 'quest.culturalProgram.active & ^global.joinedBand.singer'
+    dialogue:
+      - type: sequence
+        items:
+          - text:
+              en: "I played the violin in my country, but they're incredibly expensive, so I still haven't bought one here."
+              de: "In meiner Heimat habe ich Geige gespielt, aber die sind unglaublich teuer, also habe ich mir hier noch keine gekauft."
+          - text:
+              en: "I'm past the age to think of joining the Philharmonic, so it can wait."
+              de: "Ich bin zu alt, um bei der Philharmonie anzufangen, also eilt das nicht."
+  bikeMessenger:
+    name:
+      en: Bike Messenger
+      de: Fahrradkurier
+    spawn: { x: 5455, y: 3304 }
+    cond: 'quest.culturalProgram.active & ^global.joinedBand.guitar'
+    dialogue:
+      - text:
+          en: "I'm saving to buy a new guitar. Mine got damaged on my flight to Germany."
+          de: "Ich spare, um mir eine neue Gitarre zu kaufen. Meine alte wurde auf dem Flug nach Deutschland beschädigt."
+  windowCleaner:
+    name:
+      en: Window Cleaner
+      de: Fensterputzerin
+    type: windowWasher
+    spawn: { x: 337, y: 2641 }
+    cond: 'quest.culturalProgram.active & ^global.joinedBand.drummer'
+    dialogue:
+      - type: sequence
+        items:
+          - text:
+              en: "I asked for a raise, because my rent went up, but my boss said no. "
+              de: "Ich habe um eine Gehaltserhöhung gebeten, weil meine Miete gestiegen ist, aber mein Chef hat abgelehnt."
+          - text:
+              en: "My boss is an AI. My landlord is also an AI."
+              de: "Mein Chef ist eine KI. Mein Vermieter ist auch eine KI."
 dialogues:
   _protester:
     - text:
@@ -322,19 +379,66 @@ dialogues:
         de: "Nieder mit Beton! Es lebe die Natur!"
 scenery:
   protesters:
-    spawn: { x: 3860, y: 2665}
+    spawn: { x: 3860, y: 2665 }
     cond: '^quest.demolition.done'
-  activistPoster:
-    spawn: { x: 4602, y: 2291 }
-    cond: '^quest.disinformation.done'
+  activistTent:
+    spawn: { x: 4511, y: 2566 }
+    cond: '^quest.disinformation.done | (quest.disinformation.active & ^quest.disinformation.localDone)'
     layer: back
+  bandStage:
+    spawn: { x: 4481, y: 2543 }
+    cond: '^(^quest.disinformation.done | (quest.disinformation.active & ^quest.disinformation.localDone))'
+    layer: back
+  bandVoiceM:
+    spawn: { x: 4599, y: 2412 }
+    layer: main
+    cond: '^(^quest.disinformation.done | (quest.disinformation.active & ^quest.disinformation.localDone))'
+  bandKeyboard:
+    spawn: { x: 4493, y: 2485 }
+    layer: main
+    cond: '^(^quest.disinformation.done | (quest.disinformation.active & ^quest.disinformation.localDone))'
+  bandDrum:
+    spawn: { x: 4496, y: 2408 }
+    layer: main
+    cond: global.joinedBand.drummer
+  bandGuitar:
+    spawn: { x: 4373, y: 2463 }
+    layer: main
+    cond: global.joinedBand.guitar
+  bandVoiceF:
+    spawn: { x: 4663, y: 2409 }
+    layer: main
+    cond: global.joinedBand.singer
+  storeMural:
+    spawn: { x: 4367, y: 2408 }
+    cond: 'global.muralRestored'
+    layer: back
+  storeApts:
+    spawn: { x: 3846, y: 1862 }
+    cond: 'global.aptsBuilt'
+    layer: main
+    zIndex: 1700
+  greenRoof:
+    spawn: { x: 3852, y: 2161 }
+    cond: 'global.greenRoofBuilt'
+    layer: back
+  storesPractical:
+    spawn: { x: 3276, y: 2410 }
+    cond: 'global.storesPractical'
+    layer: main
+    zIndex: 2484
+  storesLuxury:
+    spawn: { x: 3265, y: 2415 }
+    cond: 'global.storesLuxury & ^global.storesPractical'
+    layer: main
+    zIndex: 2484
   boardedDoors:
     spawn: { x: 3842, y: 2579 }
-    cond: '^quest.buildingOwner.done'
+    cond: '^global.doorsOpen'
     layer: back
   comingSoon:
     spawn: { x: 4229, y: 2357 }
-    cond: 'quest.buildingOwner.done'
+    cond: 'global.comingSoon & ^global.storesPractical & ^global.muralRestored'
     layer: back
   ringlight:
     spawn: { x: 2614, y: 3264 }
@@ -404,6 +508,7 @@ quests:
                 - text:
                     en: "Our CEO wants to speak to you."
                     de: "Unser Geschäftsführer möchte mit dir sprechen."
+                  set: ['global.ceoVisible']
           geldbergCeo:
             - type: sequence
               items:
@@ -419,6 +524,21 @@ quests:
                 - text:
                     en: "We’re excited to announce the building’s re-opening!"
                     de: "Kündigen an: Wir freuen uns auf Wiedereröffnung des Gebäudes!"
+                - effect:
+                    type: 'pan-n-zoom'
+                    phase: start
+                    options:
+                      targetType: point
+                      target:
+                        x: 3841
+                        y: 2181
+                      zoom: 0.45
+                      displayDuration: 0
+                      displayEndDuration: 2000
+                  set: [ 'global.doorsOpen', 'global.comingSoon', 'global.storesLuxury' ]
+                - effect:
+                    type: 'pan-n-zoom'
+                    phase: end
                   set: [ 'quest.buildingOwner.done', 'pnt.investigate.buildingOwner' ]
           journalist:
             - text:
@@ -484,6 +604,306 @@ quests:
             - text:
                 en: "Search the city archives in the library and find out who owns the building."
                 de: "Recherchiere in der Bücherhalle und finde heraus, wem das Gebäude gehört."
+  commercialUse:
+    npc: citizenOpen2
+    mood: interrogation
+    required: buildingOwner
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "I was happy to see that the Kaufloft Store will reopen with new shops…"
+                de: "Ich habe mich gefreut, dass das Kaufloft-Gebäude mit neuen Geschäften wiedereröffnet wird..."
+            - text:
+                en: "… but only expensive luxury brand shops were announced! We now have to travel far to shop for everyday things."
+                de: "... aber es wurden nur teure Luxusmarkengeschäfte angekündigt! Wir müssen jetzt weit fahren, um alltägliche Dinge einzukaufen."
+            - text:
+                en: "Can you help me collect suggestions for shops that would be useful to neighbors?"
+                de: "Kannst du mir helfen, Vorschläge für Geschäfte zu sammeln, die für die Nachbarschaft nützlich wären?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "Thanks. Collect suggestions and we’ll use them to make a citizen petition."
+                    de: "Danke! Sammle Vorschläge und wir werden sie für eine Volkspetition verwenden."
+                  set: [ 'quest.commercialUse.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir noch einmal."
+    dialogues:
+      citizenOpen2:
+        - type: sequence
+          items:
+            - text:
+                en: "Talk to neighbors and collect suggestions about shops that would be useful to them."
+                de: "Sprich mit den Nachbar:innen und sammle Vorschläge für Geschäfte, die für sie nützlich wären."
+            - text:
+                en: "We’ll then use them to make a citizen petition."
+                de: "Wir werden sie dann für eine Volkspetition verwenden."
+    stages:
+      - prompt:
+          en: "Talk to neighbors and collect suggestions about shops that would be useful to them."
+          de: "Sprich mit den Nachbar:innen und sammle Vorschläge für Geschäfte, die für sie nützlich wären."
+        counter:
+          expression: 'COUNT("commercialUse.op")'
+          max: 3
+          icon: idea
+          set: [ 'quest.commercialUse.done', 'global.storesPractical', 'pnt.engage.commercialUse' ]
+        dialogues:
+          journalist:
+            - text:
+                en: "If neighbors have more local shopping options, the increased activity will help everyone."
+                de: "Wenn die Anwohner:innen mehr Einkaufsmöglichkeiten vor Ort haben, hilft das allen."
+          geldbergCeo:
+            - type: sequence
+              items:
+                - text:
+                    en: "Geldberg always brings you unique products and innovative solutions at the best price."
+                    de: "Geldberg bietet dir stets einzigartige Produkte und innovative Lösungen zum besten Preis."
+                - text:
+                    en: "We have partnered with exciting top brands."
+                    de: "Wir haben Partnerschaften mit spannenden Top-Marken."
+                - text:
+                    en: "You should trust our selections. After all, we’ve made them while thinking about you."
+                    de: "Du kannst unserer Auswahl vertrauen. Wir haben an dich gedacht, als wir sie getroffen haben."
+          robot:
+            - type: cycle
+              items:
+                - text:
+                    en: "You shop in stores, like an old person? I buy everything I need in the App Store."
+                    de: "Du kaufst ganz altmodisch in Geschäften ein? Ich kaufe alles im App Store."
+                - text:
+                    en: "If there was a “dumb response” store, you could buy some and save a lot of time."
+                    de: "Wenn es einen „Dumme Antworten“-Laden gäbe, könntest du dort ein paar kaufen und eine Menge Zeit sparen."
+                - text:
+                    en: "You should consume locally available products. If you live near an expensive shoe store, eat expensive shoes."
+                    de: "Konsumiere lokal verfügbare Produkte. Wenn du nebem dem teuren Schuhgeschäft wohnst, dann iss teure Schuhe."
+          librarian:
+            - text:
+                en: "Useful shops? Yes. I’ll be happy with whatever the majority decides."
+                de: "Nützliche Geschäfte? Ja. Ich bin zufrieden mit dem, was die Mehrheit entscheidet."
+          youngSkeptic:
+            - text:
+                en: "Shops? I don’t know, sorry."
+                de: "Geschäfte? Keine Ahnung, tut mir leid."
+          engineer:
+            - text:
+                en: "Useful shops? Yes. I’ll be happy with whatever the majority decides."
+                dde: "Nützliche Geschäfte? Ja. Ich bin zufrieden mit dem, was die Mehrheit entscheidet."
+          scientist:
+            - text:
+                en: "A shop where I can buy baby toys and clothes. I don’t trust things sold online."
+                de: "Ein Geschäft, in dem ich Babyspielzeug und -kleidung kaufen kann. Ich traue Dingen, die im Internet verkauft werden, nicht."
+              set: [ 'commercialUse.op.scientist' ]
+          artist:
+            - text:
+                en: "A fitness center, so I can go on my way home from work."
+                de: "Ein Fitnessstudio, damit ich auf dem Heimweg von der Arbeit da hingehen kann."
+              set: [ 'commercialUse.op.artist' ]
+          citizenOpen1:
+            - text:
+                en: "I’d love a cinema. I like seeing movies on a huge screen."
+                de: "Ich hätte gerne ein Kino. Ich sehe mir gerne Filme auf einer großen Leinwand an."
+              set: [ 'commercialUse.op.citizenOpen1' ]
+          citizenInvolved1:
+            - text:
+                en: "I’d like a cafe where I can sit for a while with my friends."
+                de: "Ich hätte gerne ein Café, in dem ich mit meinen Freund:innen sitzen kann."
+              set: [ 'commercialUse.op.citizenOpen1' ]
+          citizenInvolved2:
+            - text:
+                en: "I want a nearby hardware store. I can’t wait for deliveries when something breaks."
+                de: "Ich möchte einen Baumarkt in der Nähe haben. Wenn etwas kaputt geht, kann ich nicht auf die Lieferung warten."
+              set: [ 'commercialUse.op.citizenInvolved2' ]
+          citizenEstablished1:
+            - text:
+                en: "A plant shop. Thanks for asking!"
+                de: "Ein Pflanzengeschäft. Danke für die Frage!"
+              set: [ 'commercialUse.op.citizenEstablished1' ]
+          citizenEstablished2:
+            - text:
+                en: "A well-stocked supermarket! The closest one is too far away."
+                de: "Ein gut sortierter Supermarkt! Der nächstgelegene ist zu weit weg."
+              set: [ 'commercialUse.op.citizenEstablished2' ]
+          citizenDetached1:
+            - text:
+                en: "Can you ask someone else? I’m chatting with a friend."
+                de: "Kannst du jemand anderen fragen? Ich unterhalte mich gerade mit einem Freund."
+          citizenDetached2:
+            - text:
+                en: "I don’t care about local shops. I prefer buying everything online."
+                de: "Lokale Geschäfte sind mir egal. Ich kaufe lieber alles online."
+          citizenDisillusioned2:
+            - text:
+                en: "A shoe store. I buy everything online, but I must try shoes on before buying."
+                de: "Ein Schuhgeschäft. Ich kaufe alles online, aber ich muss Schuhe anprobieren, bevor ich sie kaufe."
+              set: [ 'commercialUse.op.citizenDisillusioned2' ]
+          citizenAngry1:
+            - text:
+                en: "The market should decide what shops operate here, not us."
+                de: "Der Markt sollte entscheiden, welche Geschäfte es hier gibt, nicht wir."
+          citizenAngry2:
+            - text:
+                en: "I’m fine with the shops announced. I do my everyday shopping in luxury brand stores."
+                de: "Ich habe kein Problem mit den angekündigten Geschäften. Meine täglichen Einkäufe erledige ich in Luxusmarkengeschäften."
+  culturalProgram:
+    npc: musicProducer
+    mood: exclamation
+    required: disinformation
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "Geldberg Inc. promised the city cultural activities, but the band they hired isn’t attractive to neighbors."
+                de: "Die Geldberg GmbH versprach der Stadt kulturelle Aktivitäten, aber die geplante Band ist für die Anwohner nicht attraktiv."
+            - text:
+                en: "They asked me to improve things. I want some additional members that reflect the local culture."
+                de: "Sie haben mich gebeten, die Situation zu verbessern. Ich möchte lokale Bandmitglieder finden."
+            - text:
+                en: "Can you help me hire some local musicians?"
+                de: "Kannst du mir helfen, ein paar lokale Musikschaffende zu engagieren?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "Excellent! There’s a great guitar player who delivers food on his bike. Can you find him?"
+                    de: "Super! Ein großartiger Gitarrist liefert Essen per Fahrrad aus. Kannst du ihn finden?"
+                  set: [ 'quest.culturalProgram.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "OK. Ich hoffe, du überlegst es dir noch mal."
+    dialogues:
+      robot:
+        - text:
+            en: "Do you need another band member? I’m a great MP3 player."
+            de: "Brauchst du ein weiteres Bandmitglied? Ich bin ein toller Musiker, ich kann MP3 spielen."
+    stages:
+      - cond: 'band.find.singer'
+        prompt:
+          en: "Find a singer working as a driver."
+          de: "Finde eine Sängerin, die als Fahrerin arbeitet."
+        dialogues:
+          musicProducer:
+            - type: sequence
+              items:
+                - text:
+                    en: "I called a car with an app yesterday…"
+                    de: "Ich habe gestern ein Auto mit einer App angerufen..."
+                - text:
+                    en: "… the driver was singing before I got into the car. She had the most beautiful voice! Please find her."
+                    de: "... und die Fahrerin hat gesungen, bevor ich ins Auto stieg. Sie hatte die schönste Stimme! Bitte finde sie."
+          driver:
+            - type: sequence
+              items:
+                - text:
+                    en: "It’s true, I love singing, but privately!"
+                    de: "Es stimmt, ich singe gerne, aber nur privat!"
+                - text:
+                    en: "I’m not nearly good enough to sing on stage!"
+                    de: "Ich bin nicht annähernd gut genug, um auf der Bühne zu singen!"
+                  responses:
+                    - text:
+                        en: "The audience is on your side. They want to see your joy on stage."
+                        de: "Das Publikum ist auf deiner Seite. Es will deine Freude sehen."
+                      then: convinced
+                    - text:
+                        en: "You won’t be alone. The band is on your side."
+                        de: "Du wirst nicht allein sein. Die Band wird dich unterstützen."
+                      then: convinced
+                    - text:
+                        en: "Every great artist experiences doubts."
+                        de: "Alle großen Künstler:innen haben Zweifel."
+                      then: convinced
+            - id: convinced
+              type: sequence
+              items:
+                - text:
+                    en: "Do you really think so?"
+                    de: "Glaubst du das wirklich?"
+                - text:
+                    en: "OK. OK. I should try it at least once."
+                    de: "Na gut. Ich denke, ich sollte es wenigstens einmal versuchen."
+                  set: [ 'quest.culturalProgram.done', 'global.joinedBand.singer', 'pnt.engage.culturalProgram' ]
+      - cond: 'global.joinedBand.drummer'
+        prompt:
+          en: "Return to the producer for the next assignment."
+          de: "Kehre zum Produzenten zurück, um den nächsten Auftrag zu erledigen."
+        target: musicProducer
+        dialogues:
+          musicProducer:
+            - type: sequence
+              items:
+                - text:
+                    en: "I called a car with an app yesterday…"
+                    de: "Ich habe gestern ein Auto mit einer App angerufen..."
+                - text:
+                    en: "… the driver was singing before I got into the car. She had the most beautiful voice! Please find her."
+                    de: "... und die Fahrerin hat gesungen, bevor ich ins Auto stieg. Sie hatte die schönste Stimme! Bitte finde sie."
+                  set: [ 'band.find.singer' ]
+      - cond: 'band.find.drummer'
+        prompt:
+          en: "Find a drummer who cleans windows."
+          de: "Finde eine Schlagzeugerin, die Fenster putzt."
+        dialogues:
+          musicProducer:
+            - text:
+                en: "There’s an awesome drummer who cleans office windows. Can you find her?"
+                de: "Eine tolle Schlagzeugerin putzt Bürofenster. Kannst du sie finden?"
+          windowCleaner:
+            - type: sequence
+              items:
+                - text:
+                    en: "Yes, I play the drums!"
+                    de: "Ja, ich spiele Schlagzeug!"
+                - text:
+                    en: "Although my apartment is too small to fit my drumkit, so it’s still in boxes."
+                    de: "Allerdings ist meine Wohnung zu klein für mein Schlagzeug, daher ist es noch in Kisten verpackt."
+                - text:
+                    en: "Oh, you have a space for rehearsing? I’m in!"
+                    de: "Oh, es gibt einen Raum zum Proben? Ich bin dabei!"
+                  set: [ 'global.joinedBand.drummer' ]
+      - cond: 'global.joinedBand.guitar'
+        prompt:
+          en: "Return to the producer for the next assignment."
+          de: "Kehre zum Produzenten zurück, um den nächsten Auftrag zu erledigen."
+        target: musicProducer
+        dialogues:
+          musicProducer:
+            - text:
+                en: "There’s an awesome drummer who cleans office windows. Can you find her?"
+                de: "Eine tolle Schlagzeugerin putzt Bürofenster. Kannst du sie finden?"
+              set: [ 'band.find.drummer' ]
+      - prompt:
+          en: "Find a guitar player who works in food delivery."
+          de: "Finde einen Gitarristen, der als Essenslieferant arbeitet."
+        dialogues:
+          musicProducer:
+            - text:
+                en: "There’s a great guitar player who delivers food on his bike. Can you find him?"
+                de: "Ein großartiger Gitarrist liefert Essen per Fahrrad aus. Kannst du ihn finden?"
+          bikeMessenger:
+            - type: sequence
+              items:
+                - text:
+                    en: "Yes, I play guitar!"
+                    de: "Ja, ich spiele Gitarre!"
+                - text:
+                    en: "But I haven’t played much lately because work doesn’t leave me too much free time."
+                    de: "In letzter Zeit habe ich leider nicht viel gespielt, weil die Arbeit mir kaum Zeit dazu lässt."
+                - text:
+                    en: "Oh, this is a paying gig? Then count me in!"
+                    de: "Oh, das ist ein bezahlter Auftritt? Dann bin ich dabei!"
+                  set: [ 'global.joinedBand.guitar' ]
   disinformation:
     npc: youngSkeptic
     mood: exclamation
@@ -599,7 +1019,7 @@ quests:
                 - text:
                     en: "500k :love:! Hopefully this will end the rumors."
                     de: "500k :love:! Das wird hoffentlich die Gerüchte beenden."
-                  set: [ 'quest.disinformation.done', 'pnt.communicate.disinformation' ]
+                  set: [ 'quest.disinformation.done', 'pnt.communicate.disinformation', 'quest.disinformation.localDone' ]
           videoBlogger:
             - type: sequence
               items:
@@ -618,7 +1038,7 @@ quests:
                 - text:
                     en: "500k :love:! Hopefully this will end the rumors."
                     de: "500k :love:! Das wird hoffentlich die Gerüchte beenden."
-                  set: [ 'quest.disinformation.done', 'pnt.communicate.disinformation' ]
+                  set: [ 'quest.disinformation.done', 'pnt.communicate.disinformation', 'quest.disinformation.localDone' ]
       - cond: 'quest.disinformation.stage2'
         prompt:
           en: "Tell the young skeptic what you discovered."
@@ -640,7 +1060,7 @@ quests:
                 - text:
                     en: "We need help from someone with more followers."
                     de: "Wir brauchen Hilfe von jemandem mit mehr Followern."
-                  set: ['quest.disinformation.stage3']
+                  set: [ 'quest.disinformation.stage3' ]
           _asbestosMythDebunker:
             - text:
                 en: "The rumor comes back every few years, but it’s FALSE."
@@ -692,7 +1112,7 @@ quests:
                 - text:
                     en: "The rumor comes back every few years, but it’s FALSE."
                     de: "Das Gerücht kommt alle paar Jahre wieder auf, aber es ist FALSCH."
-                  set: ['quest.disinformation.stage2']
+                  set: [ 'quest.disinformation.stage2' ]
           youngSkeptic:
             - text:
                 en: "Find an expert who can check the claims."
@@ -749,6 +1169,183 @@ quests:
             - text:
                 en: "First listen to what the activist is saying."
                 de: "Höre dir zunächst an, was der Aktivist sagt."
+  housing:
+    npc: engineer
+    mood: exclamation
+    required: commercialUse
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "I worked with the university on a project about housing."
+                de: "Ich habe mit der Universität an einem Projekt zum Thema Wohnungsbau gearbeitet."
+            - text:
+                en: "We made projections and found that the city urgently needs new homes, or rent prices will skyrocket."
+                de: "Unsere Hochrechnungen zeigen, dass die Stadt dringend neue Wohnungen braucht, sonst steigen die Mietpreise stark an."
+            - text:
+                en: "We need to share our findings with the public, so the government will take action."
+                de: "Wir müssen unsere Ergebnisse veröffentlichen, damit die Stadtverwaltung handelt."
+            - text:
+                en: "Can you help me communicate our results?"
+                de: "Kannst du mir helfen, unsere Ergebnisse zu verbreiten?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  then: accepted
+                  set: [ 'quest.housing.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "OK. Ich hoffe, du überlegst es dir nochmal."
+        - id: accepted
+          type: sequence
+          items:
+            - effect:
+                type: image
+                phase: start
+                options:
+                  src: envelope.svg
+                  size: dialogue
+                  displayDuration: 0
+            - text:
+                en: "Great! Take this report to the journalist."
+                de: "Super! Bring diesen Bericht zum Journalisten."
+            - effect:
+                type: image
+                phase: end
+    stages:
+      - cond: 'quest.housing.journalistPhase'
+        prompt:
+          en: "Talk to neighbors facing housing issues."
+          de: "Sprich mit Anwohner:innen, die von Wohnungsnot betroffen sind."
+        counter:
+          expression: 'COUNT("housing.op")'
+          max: 3
+          icon: person
+          set: [ 'quest.housing.done', 'global.aptsBuilt', 'pnt.engage.housing' ]
+        dialogues:
+          engineer:
+            - text:
+                en: "Yes, it’s possible my report was a bit hard to understand. Let’s do what the journalist suggested."
+                de: "Ja, mein Bericht war vielleicht etwas schwer verständlich. Machen wir, was der Journalist vorgeschlagen hat."
+          journalist:
+            - text:
+                en: "Talk to neighbors and find some who would benefit if more homes were built."
+                de: "Sprich mit Anwohner:innen und finde ein paar, die von zusätzlichen Wohnungen profitieren würden."
+          librarian:
+            - text:
+                en: "Every day, I lose almost two hours commuting. I would love to live closer to my work."
+                de: "Ich verliere täglich fast zwei Stunden beim Pendeln. Ich würde gerne näher an meiner Arbeit wohnen."
+              set: [ 'housing.op.librarian' ]
+          youngSkeptic:
+            - text:
+                en: "Sorry, I don’t have a personal experience to share."
+                de: "Tut mir leid, ich habe da keine persönlichen Erfahrungen."
+          scientist:
+            - text:
+                en: "Sorry, I’m lucky in this regard."
+                de: "Tut mir leid, ich habe Glück in dieser Hinsicht."
+          artist:
+            - text:
+                en: "When apartments are built, they are only used for tourist rentals."
+                de: "Wenn Wohnungen gebaut werden, werden sie nur für die Vermietung an Tourist:innen genutzt."
+              set: [ 'housing.op.artist' ]
+          citizenOpen1:
+            - text:
+                en: "Young people can’t afford to buy a home. We need more built so prices go down."
+                de: "Junge Leute können sich keine Häuser leisten. Wir müssen mehr bauen, damit die Preise sinken."
+              set: [ 'housing.op.citizenOpen1' ]
+          citizenOpen2:
+            - text:
+                en: "Young parents can’t afford apartments with enough space for a child. It’s a big problem!"
+                de: "Junge Eltern können sich keine Wohnungen mit genügend Platz für ein Kind leisten. Das ist ein großes Problem!"
+              set: [ 'housing.op.citizenOpen2' ]
+          citizenInvolved1:
+            - text:
+                en: "Refugees are having a hard time finding homes."
+                de: "Geflüchtete haben es schwer, eine Wohnung zu finden."
+              set: [ 'housing.op.citizenInvolved1' ]
+          citizenInvolved2:
+            - text:
+                en: "Rents went so high that it pushed some people to the street."
+                de: "Die Mieten sind so hoch gestiegen, dass einige Menschen auf die Straße gedrängt wurden."
+              set: [ 'housing.op.citizenInvolved2' ]
+          citizenEstablished1:
+            - text:
+                en: "There are few available apartments, so prices are at an all-time high."
+                de: "Es gibt nur wenige verfügbare Wohnungen, daher sind die Preise so hoch wie nie zuvor."
+              set: [ 'housing.op.citizenEstablished1' ]
+          citizenEstablished2:
+            - text:
+                en: "Sorry, I can’t help. I’m happy with my apartment."
+                de: "Tut mir leid, ich kann nicht helfen. Ich bin glücklich mit meiner Wohnung."
+          citizenDetached1:
+            - text:
+                en: "The city is the right size now, and it shouldn’t grow."
+                de: "Die Stadt hat jetzt die richtige Größe, sie sollte nicht mehr wachsen."
+          citizenDetached2:
+            - text:
+                en: "I worked for many years to buy my home. I don’t see the problem. That’s how it is."
+                de: "Ich habe viele Jahre lang gearbeitet, um mir mein Haus zu kaufen. Ich sehe das Problem nicht. So ist es nun mal."
+          citizenDisillusioned1:
+            - text:
+                en: "I still live with my parents, but I would love to get my place if prices go down."
+                de: "Ich wohne noch bei meinen Eltern, aber ich möchte eine eigene Wohnung, wenn die Preise sinken."
+              set: [ 'housing.op.citizenDisillusioned1' ]
+          citizenDisillusioned2:
+            - text:
+                en: "We need more parks, not more apartments."
+                de: "Wir brauchen mehr Parks, nicht mehr Wohnungen."
+          citizenAngry1:
+            - text:
+                en: "The city should spread, not grow upwards!"
+                de: "Die Stadt sollte sich ausbreiten, nicht in die Höhe wachsen!"
+          citizenAngry2:
+            - text:
+                en: "New apartments will attract outsiders. I prefer that they search elsewhere."
+                de: "Neue Wohnungen werden Fremde anziehen. Ich fände es besser, wenn sie woanders suchen."
+      - prompt:
+          en: "Take the report to the journalist."
+          de: "Bringe den Bericht zum Journalisten."
+        target: journalist
+        dialogues:
+          engineer:
+            - text:
+                en: "Take the report to the journalist. The newspaper will help us communicate our findings."
+                de: "Bring den Bericht zum Journalisten. Die Zeitung wird helfen, unsere Ergebnisse zu verbreiten."
+          journalist:
+            - type: sequence
+              items:
+                - text:
+                    en: "I’ll gladly help. Housing development is an important topic."
+                    de: "Ich werde gerne helfen. Der Wohnungsbau ist ein wichtiges Thema."
+                - text:
+                    en: "Let’s see the report…"
+                    de: "Zeig mir mal den Bericht..."
+                - effect:
+                    type: image
+                    phase: start
+                    options:
+                      src: report.svg
+                      size: dialogue
+                      displayDuration: 0
+                - text:
+                    en: "… Gah! This is a bit hard to understand!"
+                    de: "... Puh! Das ist schwer zu verstehen!"
+                - text:
+                    en: "To make it relatable to our audience, we need to give it a human dimension."
+                    de: "Um unser Publikum zu erreichen, müssen wir ihm eine menschliche Dimension geben."
+                - effect:
+                    type: image
+                    phase: end
+                - text:
+                    en: "Talk to neighbors and find some who would benefit if more homes were built."
+                    de: "Sprich mit Anwohner:innen und finde ein paar, die von zusätzlichen Wohnungen profitieren würden."
+                  set: [ 'quest.housing.journalistPhase' ]
   demolition:
     npc: artist
     mood: exclamation
@@ -863,7 +1460,7 @@ quests:
             - text:
                 en: "Mmm… I understand. I just wish I could see the beauty in the building too."
                 de: "Hmm… Ich verstehe. Aber ich wünschte, ich könnte die Schönheit des Gebäudes auch sehen."
-              set: [ 'quest.demolition.done', 'pnt.engage.demolition' ]
+              set: [ 'quest.demolition.done', 'pnt.investigate.demolition' ]
       - cond: 'quest.demolition.stage3'
         prompt:
           en: "Ask an expert if it’s true that “The building has no aesthetic value”."
@@ -984,6 +1581,503 @@ quests:
                     en: "A park would be better for the environment!"
                     de: "Ein Park wäre besser für die Umwelt!"
                   set: [ 'quest.demolition.stage1' ]
+  restoration:
+    npc: artist
+    mood: interrogation
+    required: demolition
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "My grandmother used to talk about a beautiful mural on the side of the Kaufloft building."
+                de: "Meine Großmutter erzählte immer von einem schönen Wandbild an der Seite des Kaufloft-Gebäudes."
+            - text:
+                en: "I suspect it was covered many years ago… if it’s still there, it can be restored."
+                de: "Ich vermute, dass es vor vielen Jahren überdeckt wurde... Wenn es noch da ist, kann es restauriert werden."
+            - text:
+                en: "Can you help me find information about this mural?"
+                de: "Kannst du mir helfen, Informationen über dieses Wandbild zu finden?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "Let’s find information about what the mural looked like."
+                    de: "Lass uns herausfinden, wie das Wandbild aussah."
+                  set: [ 'quest.restoration.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "OK. Ich hoffe, du überlegst es dir nochmal."
+    stages:
+      - cond: 'quest.restoration.makeViral'
+        prompt:
+          en: "Find someone who can help spread the image."
+          de: "Finde jemanden, der das Foto verbreiten kann."
+        dialogues:
+          artist:
+            - text:
+                en: "Help me find someone who can make everyone see this image."
+                de: "Hilf mir, eine Person zu finden, die dieses Foto allen zeigen kann."
+          major:
+            - type: sequence
+              items:
+                - text:
+                    en: "Yes, we can run that image in some of the city’s official social media channels."
+                    de: "Ja, wir können das Foto in den offiziellen Social-Media-Kanälen der Stadt teilen."
+                - text:
+                    en: "I just need to send it to our designers, get authorization for the text, verify the photo credits, schedule its publication in our queue…"
+                    de: "Ich muss es nur an unsere Grafiker:innen schicken, die Genehmigung für den Text einholen, den Bildnachweis überprüfen und die Veröffentlichung in unserer Warteschlange planen..."
+                - text:
+                    en: ":clock: Some time later…"
+                    de: ":clock: Einige Zeit später..."
+                - text:
+                    en: "200k :love:! People are really excited about the idea of restoring the mural."
+                    de: "200k :love:! Die Leute sind wirklich begeistert von der Idee, das Wandbild zu restaurieren."
+                  set: [ 'quest.restoration.done', 'pnt.investigate.restoration', 'global.muralRestored' ]
+          scientist:
+            - type: sequence
+              items:
+                - text:
+                    en: "I'm sorry, but I don’t think the university’s following is big enough."
+                    de: "Es tut mir leid, aber ich glaube, die Universität hat zu wenig Follower."
+                - text:
+                    en: "You should find someone who can reach a general audience."
+                    de: "Du solltest eine Person finden, die ein allgemeines Publikum erreichen kann."
+          librarian:
+            - text:
+                en: "You should ask the journalist for help. They can get that image in front of thousands."
+                de: "Du solltest den Journalisten um Hilfe bitten. Er kann das Foto tausenden Menschen zeigen."
+          videoBlogger:
+            - type: sequence
+              items:
+                - text:
+                    en: "Wow! It’s so funny to see such an old image of the neighborhood."
+                    de: "Wow! Es ist witzig, ein so altes Bild der Nachbarschaft zu sehen."
+                - text:
+                    en: "I’ll make a video matching the old locations with how they look now…"
+                    de: "Ich werde ein Video machen, in dem ich die alten Plätze mit ihrem heutigen Aussehen vergleiche..."
+                - text:
+                    en: "… I can even make a render of how the mural would look like today."
+                    de: "... Ich kann sogar ein Rendering machen, wie das Wandbild heute aussehen würde."
+                - text:
+                    en: ":clock: Some time later…"
+                    de: ":clock: Einige Zeit später..."
+                - text:
+                    en: "350k :love:! People are really excited about the idea of restoring the mural."
+                    de: "350k :love:! Die Leute sind wirklich begeistert von der Idee, das Wandbild zu restaurieren."
+                  set: [ 'quest.restoration.done', 'pnt.investigate.restoration', 'global.muralRestored' ]
+          journalist:
+            - type: sequence
+              items:
+                - text:
+                    en: "I’d be glad to help. Maybe we could even feature your image on tomorrow’s cover."
+                    de: "Ich helfe gerne. Vielleicht können wir dein Foto sogar auf der morgigen Titelseite zeigen."
+                - text:
+                    en: ":clock: Some time later…"
+                    de: ":clock: Einige Zeit später..."
+                - text:
+                    en: "400k :love: in our online edition! People are really excited about the idea of restoring the mural."
+                    de: "400k :love: in unserer Online-Ausgabe! Die Leute sind wirklich begeistert von der Idee, das Wandbild zu restaurieren."
+                  set: [ 'quest.restoration.done', 'pnt.investigate.restoration', 'global.muralRestored' ]
+          youngSkeptic:
+            - text:
+                en: "Sorry, I don’t think I have enough followers."
+                de: "Tut mir leid, ich glaube nicht, dass ich genug Follower habe."
+          engineer:
+            - text:
+                en: "You should ask an internet influencer."
+                de: "Du solltest eine:n Internet-Influencer:in fragen."
+          citizenOpen1:
+            - text:
+                en: "Sorry, I don’t think I have enough followers."
+                de: "Tut mir leid, ich glaube nicht, dass ich genug Follower habe."
+          citizenOpen2:
+            - text:
+                en: "Sorry, I don’t think I have enough followers."
+                de: "Tut mir leid, ich glaube nicht, dass ich genug Follower habe."
+          citizenInvolved1:
+            - text:
+                en: "You should ask an internet influencer."
+                de: "Du solltest eine:n Internet-Influencer:in fragen."
+          citizenInvolved2:
+            - text:
+                en: "You should ask someone with more followers."
+                de: "Du solltest jemanden fragen, der mehr Follower hat."
+          citizenEstablished1:
+            - text:
+                en: "You should ask an internet influencer."
+                de: "Du solltest eine:n Internet-Influencer:in fragen."
+          citizenEstablished2:
+            - text:
+                en: "You should ask someone with more followers."
+                de: "Du solltest jemanden fragen, der mehr Follower hat."
+          citizenDetached1:
+            - text:
+                en: "You should ask someone who works in media for help."
+                de: "Bitte eine Person, die in den Medien arbeitet, um Hilfe."
+          citizenDetached2:
+            - text:
+                en: "You should ask someone who works in media for help."
+                de: "Bitte eine Person, die in den Medien arbeitet, um Hilfe."
+          citizenDisillusioned1:
+            - text:
+                en: "Sorry, I don’t think I have enough followers."
+                de: "Tut mir leid, ich glaube nicht, dass ich genug Follower habe."
+          citizenDisillusioned2:
+            - text:
+                en: "You should ask someone who works in media for help."
+                de: "Bitte eine Person, die in den Medien arbeitet, um Hilfe."
+          citizenAngry1:
+            - text:
+                en: "Can you ask someone else? I’m chatting with a friend."
+                de: "Kannst du jemand anderen fragen? Ich unterhalte mich gerade mit einem Freund."
+          citizenAngry2:
+            - text:
+                en: "Can you ask someone else? I’m chatting with a friend."
+                de: "Kannst du jemand anderen fragen? Ich unterhalte mich gerade mit einem Freund."
+      - cond: 'quest.restoration.foundImage'
+        prompt:
+          en: "Return to the artist."
+          de: "Kehre zur Künstlerin zurück."
+        target: artist
+        dialogues:
+          artist:
+            - type: sequence
+              items:
+                - text:
+                    en: "It really was beautiful, like my grandmother described!"
+                    de: "Es war wirklich so schön, wie meine Großmutter es beschrieben hat!"
+                - text:
+                    en: "I’m sure we can get funding to restore it…"
+                    de: "Ich bin sicher, dass wir Geld für eine Restaurierung bekommen können..."
+                - text:
+                    en: "… but we need to get this image in front of people to get support for the project."
+                    de: "... aber wir müssen dieses Foto den Leuten zeigen, um Unterstützung für das Projekt zu bekommen."
+                - text:
+                    en: "Help me find someone who can make everyone see this image."
+                    de: "Hilf mir, eine Person zu finden, die dieses Foto allen zeigen kann."
+                  set: [ 'quest.restoration.makeViral' ]
+      - prompt:
+          en: "Find an old image that shows the mural on the side of the Kaufloft building."
+          de: "Finde ein altes Foto, das das Wandbild an der Seite des Kaufloft-Gebäudes zeigt."
+        dialogues:
+          artist:
+            - text:
+                en: "We need to find an old image that shows the mural on the side of the Kaufloft building."
+                de: "Wir müssen ein altes Foto finden, das das Wandbild an der Seite des Kaufloft-Gebäudes zeigt."
+          major:
+            - type: sequence
+              items:
+                - text:
+                    en: "You can find documentation about the city’s past in the library."
+                    de: "In der Bücherhalle findest du Dokumente über die Vergangenheit der Stadt."
+                - text:
+                    en: "We had to move our archives there temporarily on the last flood."
+                    de: "Bei der letzten Flut mussten wir unser Stadtarchiv vorübergehend dorthin verlegen."
+          scientist:
+            - text:
+                en: "Have you tried asking in the library?"
+                de: "Hast du schon in der Bücherhalle nachgefragt?"
+          librarian:
+            - type: sequence
+              items:
+                - text:
+                    en: "We probably can find an old photo of the Kaufloft building, let me check…"
+                    de: "Wahrscheinlich finden wir ein altes Foto vom Kaufloft-Gebäude, ich schau mal nach..."
+                - text:
+                    en: ":clock: 15 minutes later…"
+                    de: ":clock: 15 Minuten später..."
+                - text:
+                    en: "Oh, look what I found…"
+                    de: "Oh, sieh mal, was ich gefunden habe..."
+                - effect:
+                    type: image
+                    phase: start
+                    options:
+                      src: old-kaufloft-photo.svg
+                      size: dialogue
+                      displayDuration: 0
+                - text:
+                    en: "… that’s the building on the year it opened. I can make a copy for you."
+                    de: "... das ist das Gebäude im Jahr seiner Eröffnung. Ich kann eine Kopie für dich machen."
+                  set: [ 'quest.restoration.foundImage' ]
+                - effect:
+                    type: image
+                    phase: end
+          journalist:
+            - type: sequence
+              items:
+                - text:
+                    en: "We probably can find an old photo of the Kaufloft building, let me check…"
+                    de: "Wahrscheinlich finden wir ein altes Foto vom Kaufloft-Gebäude, ich schau mal nach..."
+                - text:
+                    en: ":clock: 15 minutes later…"
+                    de: ":clock: 15 Minuten später..."
+                - text:
+                    en: "Oh, look what I found…"
+                    de: "Oh, sieh mal, was ich gefunden habe..."
+                - effect:
+                    type: image
+                    phase: start
+                    options:
+                      src: old-kaufloft-photo.svg
+                      size: dialogue
+                      displayDuration: 0
+                - text:
+                    en: "… that’s the building on the year it opened. I can make a copy for you."
+                    de: "... das ist das Gebäude im Jahr seiner Eröffnung. Ich kann eine Kopie für dich machen."
+                  set: [ 'quest.restoration.foundImage' ]
+                - effect:
+                    type: image
+                    phase: end
+          geldbergCeo:
+            - type: sequence
+              items:
+                - text:
+                    en: "The side of the Kaufloft building is white, suggesting infinite possibilities, calm, light, and openness."
+                    de: "Die Seite des Kaufloft-Gebäudes ist weiß und suggeriert unendliche Möglichkeiten, Ruhe, Licht und Offenheit."
+                - text:
+                    en: "Want to advertise your brand or product? It can be yours for a low price!"
+                    de: "Möchtest du für deine Marke oder dein Produkt werben? Der Platz kann dir gehören – zu einem niedrigen Preis!"
+          robot:
+            - type: cycle
+              items:
+                - text:
+                    en: "Murals stopped making sense once TV was invented."
+                    de: "Wandbilder machen keinen Sinn mehr, seit es Fernsehen gibt."
+                - text:
+                    en: "The only thing more boring than watching paint dry is watching paint that’s dry already."
+                    de: "Das Einzige was noch langweiliger ist, als Farbe beim Trocknen zuzusehen, ist bereits trockener Farbe zuzusehen."
+                - text:
+                    en: "Give some kids crayons, and you’ll have a new “mural” in seconds."
+                    de: "Gib ein paar Kindern Buntstifte, und du hast in Sekundenschnelle ein neues „Wandbild“."
+          engineer:
+            - text:
+                en: "The newspaper archives surely has an image of what that mural looked like."
+                de: "In den Zeitungsarchiven gibt es sicherlich ein Foto von diesem Wandbild."
+          videoblogger:
+            - type: sequence
+              items:
+                - text:
+                    en: "Maybe I can help. Let me search online for an image…"
+                    de: "Vielleicht kann ich helfen. Ich werde mal online nach einem Bild suchen..."
+                - text:
+                    en: "… oops, nothing, sorry."
+                    de: "... Huch, nichts! Tut mir leid."
+  greenRoof:
+    npc: protester3
+    mood: exclamation
+    required: ['demolition', 'buildingOwner']
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "I now understand that it’s more sustainable to find a new user for the Kaufloft building…"
+                de: "Ich verstehe jetzt, dass es nachhaltiger ist, einen neuen Nutzer für das Kaufloft-Gebäude zu finden..."
+            - text:
+                en: "… but still think the neighborhood needs more green."
+                de: "... aber ich denke immer noch, dass die Nachbarschaft mehr Grün braucht."
+            - text:
+                en: "I want to propose that a “green roof”, with plants and trees, be built on top of the Kaufloft building."
+                de: "Ich schlage vor, auf dem Kaufloft-Gebäude ein „grünes Dach“ mit Pflanzen und Bäumen zu errichten.."
+            - text:
+                en: "Can you help me make the idea a reality?"
+                de: "Kannst du mir helfen, diese Idee in die Tat umzusetzen?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "Let’s find experts who can design the green roof."
+                    de: "Lass uns Expert:innen finden, die das grüne Dach entwerfen können."
+                  set: [ 'quest.greenRoof.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "OK. Ich hoffe, du überlegst es dir nochmal."
+    dialogues:
+      protester3:
+        - text:
+            en: "Let’s find experts who can design the green roof."
+            de: "Lass uns Expert:innen finden, die das grüne Dach entwerfen können."
+      scientist:
+        - type: sequence
+          items:
+            - text:
+                en: "A green roof on the Kaufloft building is a great idea. I’ll be glad to help."
+                de: "Ein begrüntes Dach auf dem Kaufloft-Gebäude ist eine großartige Idee. Ich helfe gerne mit."
+            - text:
+                en: "Besides its beauty, it can improve air quality and reduce noise…"
+                de: "Es ist nicht nur schön, sondern kann auch die Luftqualität verbessern und den Lärm reduzieren..."
+            - text:
+                en: "… and it can also provide a habitat for bees, birds, and butterflies."
+                de: "... und es kann auch einen Lebensraum für Bienen, Vögel und Schmetterlinge bieten."
+              set: [ 'quest.greenRoof.foundBiodiversityExpert' ]
+            - cond: '^quest.greenRoof.foundConstructionExpert'
+              text:
+                en: "But you’ll also need the help of an expert who can help plan its physical construction."
+                de: "Aber du wirst auch die Hilfe einer Fachperson brauchen, die dir bei der Planung der Konstruktion helfen kann."
+      engineer:
+        - type: sequence
+          items:
+            - text:
+                en: "I’ll gladly help design a green roof for the Kaufloft building."
+                de: "Ich helfe gerne bei der Gestaltung eines begrünten Daches für das Kaufloft-Gebäude."
+            - text:
+                en: "A green roof can reflect sunlight, protecting the building and reducing heat in the city…"
+                de: "Ein begrüntes Dach kann das Sonnenlicht reflektieren, das Gebäude schützen und die Hitze in der Stadt reduzieren..."
+            - text:
+                en: "… and also, with proper planning, it can absorb rainwater, acting as a “sponge.”"
+                de: "... und bei richtiger Planung kann es auch Regenwasser aufnehmen und wie ein „Schwamm“ wirken."
+              set: [ 'quest.greenRoof.foundConstructionExpert' ]
+            - cond: '^quest.greenRoof.foundBiodiversityExpert'
+              text:
+                en: "But you’ll also need the help of an expert in biodiversity, who can select the plants to use."
+                de: "Aber du brauchst auch die Hilfe einer Fachperson für Biodiversität, die die Pflanzen auswählt, die du verwenden willst."
+      journalist:
+        - cond: '^quest.greenRoof.foundConstructionExpert'
+          text:
+            en: "You should ask the engineer working at the construction site for help."
+            de: "Du solltest den Ingenieur, der auf der Baustelle arbeitet, um Hilfe bitten."
+        - cond: '^quest.greenRoof.foundBiodiversityExpert'
+          text:
+            en: "You should ask the scientist at the university for help."
+            de: "Du solltest die Wissenschaftlerin an der Universität um Hilfe bitten."
+      librarian:
+        - type: sequence
+          items:
+            - text:
+                en: "We have several books and articles about “green roofs”..."
+                de: "Wir haben mehrere Bücher und Artikel über „grüne Dächer“..."
+            - text:
+                en: "…but I think you need direct access to local experts who can design one for the store building,"
+                de: "...aber ich denke, du brauchst direkten Zugang zu lokalen Fachleuten, die das begrünte Dach für das Kaufloft-Gebäude entwerfen können."
+      major:
+        - type: sequence
+          items:
+            - text:
+                en: "Green roofs have many advantages!"
+                de: "Begrünte Dächer haben viele Vorteile!"
+            - text:
+                en: "We’ll be happy to subsidize its construction."
+                de: "Wir bezuschussen ihren Bau gerne."
+      robot:
+        - type: sequence
+          items:
+            - text:
+                en: "The only “green roof” I saw was at a party…"
+                de: "Das einzige „grüne Dach“, das ich gesehen habe, war auf einer Party..."
+            - text:
+                en: "… on a hot day, after we ate some bad seafood…"
+                de: "...an einem heißen Tag, nachdem wir schlechte Meeresfrüchte gegessen hatten..."
+            - text:
+                en: "Get it? We were sick… Get it? “Green” roof?"
+                de: "Verstehst du? Uns war schlecht... Kapiert? „Grünes“ Dach?"
+      youngSkeptic:
+        - text:
+            en: "You should look for an actual expert."
+            de: "Sie sollten sich an eine echte Expert:in wenden."
+      videoBlogger:
+        - text:
+            en: "That’s outside of my expertise."
+            de: "Das liegt nicht in meinem Fachgebiet."
+      artist:
+        - text:
+            en: "I think it’s fascinating, but I’m not qualified to help."
+            de: "Ich finde es spannend, aber ich bin nicht qualifiziert genung, um zu helfen."
+      citizenOpen1:
+        - text:
+            en: "You should look for an actual expert."
+            de: "Sie sollten sich an eine echte Expert:in wenden."
+      citizenOpen2:
+        - text:
+            en: "Sorry, I don’t know anything about green roofs."
+            de: "Tut mir leid, ich weiß nichts über grüne Dächer."
+      citizenInvolved1:
+        - text:
+            en: "Sorry, I don’t know anything about green roofs."
+            de: "Tut mir leid, ich weiß nichts über grüne Dächer."
+      citizenInvolved2:
+        - text:
+            en: "You should look for an actual expert."
+            de: "Sie sollten sich an eine echte Expert:in wenden."
+      citizenEstablished1:
+        - text:
+            en: "That’s outside of my expertise."
+            de: "Das liegt nicht in meinem Fachgebiet."
+      citizenEstablished2:
+        - text:
+            en: "Can’t help"
+            de: "Kann nicht helfen"
+      citizenDetached1:
+        - text:
+            en: "Can’t help"
+            de: "Kann nicht helfen"
+      citizenDetached2:
+        - text:
+            en: "Can’t help"
+            de: "Kann nicht helfen"
+      citizenDisillusioned1:
+        - text:
+            en: "What’s a green roof?"
+            de: "Was ist ein grünes Dach?"
+      citizenDisillusioned2:
+        - text:
+            en: "What’s a green roof?"
+            de: "Was ist ein grünes Dach?"
+      citizenAngry1:
+        - text:
+            en: "Me? Green roofs? No."
+            de: "Ich? Grüne Dächer? Nein."
+      citizenAngry2:
+        - text:
+            en: "Me? Green roofs? No."
+            de: "Ich? Grüne Dächer? Nein."
+    stages:
+      - cond: 'quest.greenRoof.foundConstructionExpert & quest.greenRoof.foundBiodiversityExpert'
+        prompt:
+          en: "Ask the Geldberg CEO to build a “green roof” on top of the Kaufloft building."
+          de: "Bitte den Geschäftsführer von Geldberg, ein „grünes Dach“ auf dem Kaufloft-Gebäude zu errichten."
+        target: geldbergCeo
+        dialogues:
+          protester3:
+            - text:
+                en: "We should take our plans to the Geldberg CEO."
+                de: "Wir sollten unsere Pläne dem Geschäftsführer von Geldberg vorlegen."
+          geldbergCeo:
+            - type: sequence
+              items:
+              - text:
+                  en: "At Geldberg Inc. we are at the forefront of sustainable urban practices."
+                  de: "Die Geldberg GmbH: Ihr Top-Partner für nachhaltige städtische Entwicklung!"
+              - text:
+                  en: "We thank the Mayor for her commitment and courage in offering a subsidy…"
+                  de: "Wir danken der Bürgermeisterin für ihr Engagement und ihren Mut, einen Zuschuss anzubieten..."
+              - text:
+                  en: "We would be happy to collaborate with the city in making a green roof on top of the Kaufloft building a reality."
+                  de: "Wir freuen uns auf die Zusammenarbeit mit der Stadt, um das Kaufloft-Gebäude mit einem begrünten Dach in eine grüne Oase zu verwandeln."
+                set: [ 'quest.greenRoof.done', 'pnt.investigate.greenRoof', 'global.greenRoofBuilt' ]
+      - cond: 'quest.greenRoof.foundConstructionExpert'
+        prompt:
+          en: "Find an expert on plants to help with the green roof."
+          de: "Suche nach einer Fachperson für Pflanzen, die bei der Dachbegrünung hilft."
+        dialogues: {}
+      - cond: 'quest.greenRoof.foundBiodiversityExpert'
+        prompt:
+          en: "Find an expert on sustainable construction to help with the green roof."
+          de: "Finde eine Fachperson für nachhaltiges Bauen, die dir bei der Dachbegrünung hilft."
+        dialogues: {}
+      - prompt:
+          en: "Find an expert who can help build a green roof."
+          de: "Finde eine Fachperson, die beim Bau eines Gründachs helfen kann."
+        dialogues: {}
 ending:
   dialogue:
     - type: sequence

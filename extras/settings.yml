@@ -2,6 +2,7 @@ game:
   languages: ['de', 'en']
   canSwitchQuests: false
   duration: 480
+  maxActiveQuests: 100
   cameraPresets:
     walking:
       offset:
@@ -46,12 +47,34 @@ textures:
           srcs: 'guide-arrow.png'
         - name: 'protesters'
           srcs: 'protesters.png'
-        - name: 'activistPoster'
-          srcs: 'activist-poster.png'
+        - name: 'activistTent'
+          srcs: 'activist-tent.png'
+        - name: 'storeMural'
+          srcs: 'store-mural.png'
+        - name: 'bandStage'
+          srcs: 'band-stage.png'
+        - name: 'storeApts'
+          srcs: 'store-apts.png'
+        - name: 'greenRoof'
+          srcs: 'green-roof.png'
+        - name: 'storesPractical'
+          srcs: 'stores-practical.png'
+        - name: 'storesLuxury'
+          srcs: 'stores-luxury.png'
         - name: 'boardedDoors'
           srcs: 'boarded-doors.png'
         - name: 'comingSoon'
           srcs: 'coming-soon.png'
+        - name: 'bandDrum'
+          srcs: 'band-drum.png'
+        - name: 'bandKeyboard'
+          srcs: 'band-keyboard.png'
+        - name: 'bandGuitar'
+          srcs: 'band-guitar.png'
+        - name: 'bandVoiceM'
+          srcs: 'band-voice-m.png'
+        - name: 'bandVoiceF'
+          srcs: 'band-voice-f.png'
         - name: 'ringlight'
           srcs: 'ringlight.png'
         - name: 'camera'
