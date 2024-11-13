@@ -26,6 +26,18 @@ $c-edsoc-yellow: #ffeb78;
   .inclusion-bar {
     display: none;
   }
+
+  & > .multi-text-scroller {
+    .text-scroller {
+      visibility: hidden;
+      .text {
+        font-size: 1.15em;
+      }
+    }
+    .text-scroller:first-of-type {
+      visibility: visible;
+    }
+  }
 }
 
 .intro-screen {
