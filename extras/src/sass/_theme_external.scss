@@ -1,8 +1,19 @@
+$zsb-rot: #e32a3b;
+$zsb-tuerkis: #96e0d7;
+$zsb-tuerkis-light: #c1fff7;
+$zsb-sand: #d0b079;
+$zsb-flieder: #d4b9db;
+$zsb-flieder-light: #e5caed;
+$zsb-terrakotta: #c57970;
+$zsb-gruen: #36af53;
+$zsb-gelb: #ffc763;
+
+
 $c-edsoc-yellow: #ffeb78;
 
 .multi-text-scroller {
   padding: 0.2em 0 0.5em;
-  background-color: $c-edsoc-yellow;
+  background-color: $zsb-flieder-light;
 
   .text-scroller {
     background-color: transparent;
@@ -41,15 +52,19 @@ $c-edsoc-yellow: #ffeb78;
 }
 
 .intro-screen {
-  background-color: $c-edsoc-yellow;
+  background-color: $zsb-tuerkis-light;
 
   .waiting-text .text {
-    color: $c-edsoc-yellow;
+    color: $zsb-tuerkis-light;
   }
 }
 
 .decision-screen {
-  background-color: $c-edsoc-yellow;
+  background-color: $zsb-tuerkis-light;
+}
+
+.quest-overlay {
+  background-color: $zsb-flieder-light;
 }
 
 .player-1 .title-overlay {
