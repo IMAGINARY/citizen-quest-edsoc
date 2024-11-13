@@ -1,5 +1,6 @@
 game:
   languages: ['de', 'en']
+  defaultLanguage: de
   canSwitchQuests: false
   duration: 480
   maxActiveQuests: 100
