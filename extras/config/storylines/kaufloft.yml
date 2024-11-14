@@ -132,7 +132,7 @@ npcs:
     dialogue:
       - text:
           en: "Our research institute used to hold a yearly exhibition about biodiversity in the old store."
-          de: "Unser Forschungsinstitut veranstaltete im alten Kaufhaus jedes Jahr eine Ausstellung über die biologische Vielfalt."
+          de: "Unser Forschungsinstitut veranstaltete im alten Kaufhaus jedes Jahr eine Ausstellung über biologische Vielfalt."
   videoBlogger:
     name:
       en: Videoblogger
@@ -514,7 +514,7 @@ quests:
               items:
                 - text:
                     en: "Geldberg Inc. owns the Kaufloft Store building."
-                    de: "Geldberg GmbH bestitzt Kaufloft-Gebäude."
+                    de: "Geldberg GmbH besitzt Kaufloft-Gebäude."
                 - text:
                     en: "Remaining closed maximizes fiscal efficiency…"
                     de: "Schließung maximiert fiskalische Effizienz..."
@@ -682,7 +682,7 @@ quests:
                     de: "Wenn es einen „Dumme Antworten“-Laden gäbe, könntest du dort ein paar kaufen und eine Menge Zeit sparen."
                 - text:
                     en: "You should consume locally available products. If you live near an expensive shoe store, eat expensive shoes."
-                    de: "Konsumiere lokal verfügbare Produkte. Wenn du nebem dem teuren Schuhgeschäft wohnst, dann iss teure Schuhe."
+                    de: "Konsumiere lokal verfügbare Produkte. Wenn du neben dem teuren Schuhgeschäft wohnst, dann iss teure Schuhe."
           librarian:
             - text:
                 en: "Useful shops? Yes. I’ll be happy with whatever the majority decides."
@@ -1983,7 +1983,7 @@ quests:
       youngSkeptic:
         - text:
             en: "You should look for an actual expert."
-            de: "Sie sollten sich an eine echte Expert:in wenden."
+            de: "Du solltest dich an echte Fachleute wenden."
       videoBlogger:
         - text:
             en: "That’s outside of my expertise."
