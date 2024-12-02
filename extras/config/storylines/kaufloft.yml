@@ -496,8 +496,13 @@ quests:
     stages:
       - cond: 'quest.buildingOwner.stage2'
         prompt:
-          en: "Ask about the building in the Geldberg Inc. offices."
-          de: "Frage nach dem Kaufloft-Gebäude in den Büros der Geldberg GmbH."
+          - text:
+              en: "Ask about the building in the Geldberg Inc. offices."
+              de: "Frage nach dem Kaufloft-Gebäude in den Büros der Geldberg GmbH."
+          - text:
+              en: "Talk to the security guard in the office building west of the Kaufloft Store."
+              de: "Sprich mit dem Sicherheitspersonal im Bürogebäude westlich des Kaufloft-Gebäudes."
+            target: securityGuard
         dialogues:
           securityGuard:
             - type: sequence
@@ -550,8 +555,13 @@ quests:
                 de: "Geldberg GmbH? Bitte sprich mit ihnen und frage, ob sie bereit sind, wieder zu eröffnen."
       - cond: 'quest.buildingOwner.stage1'
         prompt:
-          en: "Get help from a journalist to find out who owns the building."
-          de: "Hol dir Hilfe von einem Journalisten, um herauszufinden, wem das Gebäude gehört."
+          - text:
+              en: "Get help from a journalist to find out who owns the building."
+              de: "Hol dir Hilfe von einem Journalisten, um herauszufinden, wem das Gebäude gehört."
+          - text:
+              en: "Speak to the journalist. The newspaper is east of the Kaufloft Store building."
+              de: "Sprich mit dem Journalisten. Die Zeitungsredaktion befindet sich östlich des Kaufloft-Gebäudes."
+            target: journalist
         dialogues:
           journalist:
             - type: sequence
@@ -581,8 +591,13 @@ quests:
                 en: "Thailand? Interesting. Be sure to talk to a journalist and find out more."
                 de: "Thailand? Das ist interessant. Sprich mit einem Journalisten und finde mehr heraus."
       - prompt:
-          en: "Search the city archives in the library and find out who owns the building."
-          de: "Recherchiere in der Bücherhalle und finde heraus, wem das Gebäude gehört."
+          - text:
+              en: "Search the city archives in the library and find out who owns the building."
+              de: "Recherchiere in der Bücherhalle und finde heraus, wem das Gebäude gehört."
+          - text:
+              en: "Speak to the librarian. The library is north of the Kaufloft Store building."
+              de: "Sprich mit der Bibliothekarin. Die Bücherhalle befindet sich nördlich des Kaufloft-Gebäudes."
+            target: librarian
         dialogues:
           librarian:
             - type: sequence
@@ -754,7 +769,7 @@ quests:
   culturalProgram:
     npc: musicProducer
     mood: exclamation
-    required: disinformation
+    required: ['disinformation', 'buildingOwner']
     available:
       dialogue:
         - type: sequence
@@ -790,8 +805,16 @@ quests:
     stages:
       - cond: 'band.find.singer'
         prompt:
-          en: "Find a singer working as a driver."
-          de: "Finde eine Sängerin, die als Fahrerin arbeitet."
+          - text:
+              en: "Find a singer working as a driver."
+              de: "Finde eine Sängerin, die als Fahrerin arbeitet."
+          - text:
+              en: "Find a singer working as a driver. They’re next to their car."
+              de: "Finde eine Sängerin, die als Fahrerin arbeitet. Sie befindet sich neben ihrem Auto."
+          - text:
+              en: "Find a singer working as a driver. They’re next to their car."
+              de: "Finde eine Sängerin, die als Fahrerin arbeitet. Sie befindet sich neben ihrem Auto."
+              target: driver
         dialogues:
           musicProducer:
             - type: sequence
@@ -852,8 +875,16 @@ quests:
                   set: [ 'band.find.singer' ]
       - cond: 'band.find.drummer'
         prompt:
-          en: "Find a drummer who cleans windows."
-          de: "Finde eine Schlagzeugerin, die Fenster putzt."
+          - text:
+              en: "Find a drummer who cleans windows."
+              de: "Finde eine Schlagzeugerin, die Fenster putzt."
+          - text:
+              en: "Find a drummer who cleans windows. They’re currently working at a building with many windows."
+              de: "Finde eine Schlagzeugerin, die Fenster putzt. Sie arbeitet gerade an einem Gebäude mit vielen Fenstern."
+          - text:
+              en: "Find a drummer who cleans windows. They’re currently working at a building with many windows."
+              de: "Finde eine Schlagzeugerin, die Fenster putzt. Sie arbeitet gerade an einem Gebäude mit vielen Fenstern."
+            target: windowCleaner
         dialogues:
           musicProducer:
             - text:
@@ -884,8 +915,16 @@ quests:
                 de: "Eine tolle Schlagzeugerin putzt Bürofenster. Kannst du sie finden?"
               set: [ 'band.find.drummer' ]
       - prompt:
-          en: "Find a guitar player who works in food delivery."
-          de: "Finde einen Gitarristen, der als Essenslieferant arbeitet."
+          - text:
+              en: "Find a guitar player who works in food delivery."
+              de: "Finde einen Gitarristen, der als Essenslieferant arbeitet."
+          - text:
+              en: "Find a guitar player who works in food delivery. They have a large orange backpack and a bicycle."
+              de: "Finde einen Gitarristen, der als Essenslieferant arbeitet. Er hat einen großen orangefarbenen Rucksack und ein Fahrrad."
+          - text:
+              en: "Find a guitar player who works in food delivery. They have a large orange backpack and a bicycle."
+              de: "Finde einen Gitarristen, der als Essenslieferant arbeitet. Er hat einen großen orangefarbenen Rucksack und ein Fahrrad."
+            target: bikeMessenger
         dialogues:
           musicProducer:
             - text:
@@ -998,8 +1037,16 @@ quests:
     stages:
       - cond: 'quest.disinformation.stage3'
         prompt:
-          en: "Find someone that can reach more people with the information."
-          de: "Finde jemanden, der mehr Menschen mit den Informationen erreichen kann."
+          - text:
+              en: "Find someone that can reach more people with the information."
+              de: "Finde jemanden, der mehr Menschen mit den Informationen erreichen kann."
+          - text:
+              en: "Ask the video blogger or the journalist for help."
+              de: "Bitte den Videoblogger oder den Journalisten um Hilfe."
+          - text:
+              en: "Talk to the journalist east of the Kaufloft Store building."
+              de: "Sprich mit dem Journalisten östlich des Kaufloft-Gebäudes."
+            target: journalist
         dialogues:
           journalist:
             - type: sequence
@@ -1097,8 +1144,13 @@ quests:
                     de: "Wenn du sie entlarven kannst, veröffentliche ich gerne ein Video darüber."
       - cond: 'quest.disinformation.stage1'
         prompt:
-          en: "Find an expert who can check the information."
-          de: "Finde eine Fachperson, die die Behauptungen überprüfen kann."
+          - text:
+              en: "Find an expert who can check the information."
+              de: "Finde eine Fachperson, die die Behauptungen überprüfen kann."
+          - text:
+              en: "Talk to a scientist at the university to check the information."
+              de: "Sprich mit einer Wissenschaftlerin der Universität, um die Informationen zu überprüfen."
+            target: scientist
         dialogues:
           _asbestosMythDebunker:
             - type: sequence
@@ -1534,8 +1586,16 @@ quests:
                   set: [ 'quest.demolition.stage3' ]
       - cond: 'quest.demolition.stage1'
         prompt:
-          en: "Ask an expert if it’s true that “A park would be better for the environment”."
-          de: "Frage Expert:innen, ob es stimmt, dass „ein Park besser für die Umwelt wäre“."
+          - text:
+              en: "Ask an expert if it’s true that “A park would be better for the environment”."
+              de: "Frage Expert:innen, ob es stimmt, dass „ein Park besser für die Umwelt wäre“."
+          - text:
+              en: "Talk to a scientist and find if it’s true that “A park would be better for the environment”."
+              de: "Sprich mit einem Forschenden und finde heraus, ob es stimmt, dass „ein Park besser für die Umwelt wäre”."
+          - text:
+              en: "Talk to the scientist in the university, northeast of the Kaufloft Store building."
+              de: "Sprich mit der Wissenschaftlerin an der Universität, nordöstlich des Kaufloft-Gebäudes."
+            target: scientist
         dialogues:
           _demolitionEnvExpert:
             - type: sequence
@@ -2066,17 +2126,35 @@ quests:
                 set: [ 'quest.greenRoof.done', 'pnt.investigate.greenRoof', 'global.greenRoofBuilt' ]
       - cond: 'quest.greenRoof.foundConstructionExpert'
         prompt:
-          en: "Find an expert on plants to help with the green roof."
-          de: "Suche nach einer Fachperson für Pflanzen, die bei der Dachbegrünung hilft."
+          - text:
+              en: "Find an expert on plants to help with the green roof."
+              de: "Suche nach einer Fachperson für Pflanzen, die bei der Dachbegrünung hilft."
+          - text:
+              en: "Talk to the scientist at the university."
+              de: "Sprich mit der Wissenschaftlerin an der Universität."
+            target: scientist
         dialogues: {}
       - cond: 'quest.greenRoof.foundBiodiversityExpert'
         prompt:
-          en: "Find an expert on sustainable construction to help with the green roof."
-          de: "Finde eine Fachperson für nachhaltiges Bauen, die dir bei der Dachbegrünung hilft."
+          - text:
+              en: "Find an expert on sustainable construction to help with the green roof."
+              de: "Finde eine Fachperson für nachhaltiges Bauen, die dir bei der Dachbegrünung hilft."
+          - text:
+              en: "Talk to the engineer at the construction site."
+              de: "Sprich mit dem Ingenieur auf der Baustelle."
+            target: engineer
         dialogues: {}
       - prompt:
-          en: "Find an expert who can help build a green roof."
-          de: "Finde eine Fachperson, die beim Bau eines Gründachs helfen kann."
+          - text:
+              en: "Find an expert who can help build a green roof."
+              de: "Finde eine Fachperson, die beim Bau eines Gründachs helfen kann."
+          - text:
+              en: "Find an expert on plants or sustainable construction to help with the green roof."
+              de: "Suche nach einer Fachperson für Pflanzen oder nachhaltiges Bauen, die bei der Dachbegrünung hilft."
+          - text:
+              en: "Talk to the scientist at the university."
+              de: "Sprich mit der Wissenschaftlerin an der Universität."
+            target: scientist
         dialogues: {}
 ending:
   dialogue:
@@ -2084,6 +2162,14 @@ ending:
       items:
         - type: first
           items:
+            - cond: 'quest.housing.done'
+              text:
+                en: "The old department store reopened, providing both shops and much-needed housing."
+                de: "Das alte Kaufhaus wurde wiedereröffnet und bietet sowohl Geschäfte als auch dringend benötigten Wohnraum."
+            - cond: 'quest.commercialUse.done'
+              text:
+                en: "The old department store reopened, with shops catering to many basic needs."
+                de: "Das alte Kaufhaus wurde wiedereröffnet, mit Geschäften, die viele Grundbedürfnisse abdecken."
             - cond: 'quest.buildingOwner.done'
               text:
                 en: "The old department store reopened. It features luxury brands and concept stores, attracting tourists."
@@ -2093,6 +2179,18 @@ ending:
                 de: "Das alte Kaufhausgebäude bleibt geschlossen."
         - type: first
           items:
+            - cond: 'quest.restoration.done & quest.greenRoof.done'
+              text:
+                en: "Locals are now very happy with the restored building and its new green roof."
+                de: "Die Einheimischen sind jetzt sehr zufrieden mit dem restaurierten Gebäude und seinem neuen begrünten Dach."
+            - cond: 'quest.greenRoof.done'
+              text:
+                en: "Thanks to the new green roof, locals feel it’s improving their well-being."
+                de: "Dank des begrünten Dachs verbessert sich das Wohlbefinden bei der lokalen Bevölkerung."
+            - cond: 'quest.restoration.done'
+              text:
+                en: "Thanks to the restoration, locals finally appreciate its historic building."
+                de: "Dank der Restaurierung schätzt die lokale Bevölkerung endlich das historische Gebäude."
             - cond: 'quest.demolition.done'
               text:
                 en: "Most locals don’t like it, but they will proudly tell you that it’s featured in an old sci-fi movie."
@@ -2102,6 +2200,10 @@ ending:
                 de: "Jeden Monat gibt es Proteste, die den Abriss des Gebäudes und den Bau eines Parks fordern."
         - type: first
           items:
+            - cond: 'quest.culturalProgram.done'
+              text:
+                en: "The cultural activities give the neighborhood life and energy and have created a new gathering point."
+                de: "Die kulturellen Aktivitäten bringen Leben und Energie ins Viertel und schaffen einen neuen Treffpunkt für alle."
             - cond: 'quest.disinformation.done'
               text:
                 en: "Small stores started to open around, showing promise for the future of the neighborhood."
