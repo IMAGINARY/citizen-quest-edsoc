@@ -1,6 +1,7 @@
 game:
   languages: ['de', 'en']
   defaultLanguage: de
+  theme: zsb
   canSwitchQuests: false
   duration: 480
   maxActiveQuests: 100

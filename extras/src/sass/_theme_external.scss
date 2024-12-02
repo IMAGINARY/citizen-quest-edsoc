@@ -1,19 +1,8 @@
-$zsb-rot: #e32a3b;
-$zsb-tuerkis: #96e0d7;
-$zsb-tuerkis-light: #c1fff7;
-$zsb-sand: #d0b079;
-$zsb-flieder: #d4b9db;
-$zsb-flieder-light: #e5caed;
-$zsb-terrakotta: #c57970;
-$zsb-gruen: #36af53;
-$zsb-gelb: #ffc763;
-
-
 $c-edsoc-yellow: #ffeb78;
 
 .multi-text-scroller {
   padding: 0.2em 0 0.5em;
-  background-color: $zsb-flieder-light;
+  background-color: $c-edsoc-yellow;
 
   .text-scroller {
     background-color: transparent;
@@ -31,56 +20,89 @@ $c-edsoc-yellow: #ffeb78;
     background-size: contain;
     background-repeat: no-repeat;
     width: 15%;
-    height: 75%;
+    height: 85%;
   }
 
   .inclusion-bar {
     display: none;
   }
+}
 
-  & > .multi-text-scroller {
-    .text-scroller {
-      visibility: hidden;
-      .text {
-        font-size: 1.15em;
+//
+// ZEIT Stiftung Bucerius (zsb) theme
+// (activate via config/game.yml: theme: 'zsb';)
+//
+.theme-zsb {
+  $zsb-rot: #e32a3b;
+  $zsb-tuerkis: #96e0d7;
+  $zsb-tuerkis-light: #c1fff7;
+  $zsb-sand: #d0b079;
+  $zsb-flieder: #d4b9db;
+  $zsb-flieder-light: #e5caed;
+  $zsb-terrakotta: #c57970;
+  $zsb-gruen: #36af53;
+  $zsb-gelb: #ffc763;
+
+  $zsb-p1: #43f56e;
+  $zsb-p2: #9290ff;
+  $zsb-p3: #db6bf8;
+
+  &.player-1 .title-overlay {
+    .logo {
+      background-color: $zsb-p1 !important;
+    }
+  }
+
+  &.player-2 .title-overlay {
+    .logo {
+      background-color: $zsb-p2 !important;
+    }
+  }
+
+  &.player-3 .title-overlay {
+    .logo {
+      background-color: $zsb-p3 !important;
+    }
+  }
+
+  .intro-screen {
+    background-color: $zsb-tuerkis-light;
+
+    .waiting-text .text {
+      color: $zsb-tuerkis-light;
+    }
+  }
+
+  .decision-screen {
+    background-color: $zsb-tuerkis-light;
+  }
+
+  .quest-overlay {
+    background-color: $zsb-flieder-light;
+  }
+
+  .multi-text-scroller {
+    background-color: $zsb-flieder-light;
+  }
+
+  // The zsb only shows German text in the map app
+
+  &.map-app {
+    &:after {
+      background-image: url('../../static/ui/skills-overlay-de.svg');
+      height: 75%;
+    }
+
+    & > .multi-text-scroller {
+      .text-scroller {
+        visibility: hidden;
+        .text {
+          font-size: 1.15em;
+        }
+      }
+      .text-scroller:first-of-type {
+        visibility: visible;
       }
     }
-    .text-scroller:first-of-type {
-      visibility: visible;
-    }
-  }
-}
-
-.intro-screen {
-  background-color: $zsb-tuerkis-light;
-
-  .waiting-text .text {
-    color: $zsb-tuerkis-light;
-  }
-}
-
-.decision-screen {
-  background-color: $zsb-tuerkis-light;
-}
-
-.quest-overlay {
-  background-color: $zsb-flieder-light;
-}
-
-.player-1 .title-overlay {
-  .logo {
-    background-color: #43f56e !important;
-  }
-}
-
-.player-2 .title-overlay {
-  .logo {
-    background-color: #9290ff !important;
-  }
-}
-
-.player-3 .title-overlay {
-  .logo {
-    background-color: #db6bf8 !important;
   }
 }
