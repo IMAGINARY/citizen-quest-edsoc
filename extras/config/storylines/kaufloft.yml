@@ -336,7 +336,7 @@ npcs:
       en: Driver
       de: Fahrerin
     spawn: { x: 6098, y: 3481 }
-    cond: 'quest.culturalProgram.active & ^global.joinedBand.singer'
+    cond: 'quest.culturalProgram.active | ^global.joinedBand.singer'
     dialogue:
       - type: sequence
         items:
@@ -351,7 +351,7 @@ npcs:
       en: Bike Messenger
       de: Fahrradkurier
     spawn: { x: 5455, y: 3304 }
-    cond: 'quest.culturalProgram.active & ^global.joinedBand.guitar'
+    cond: 'quest.culturalProgram.active | ^global.joinedBand.guitar'
     dialogue:
       - text:
           en: "I'm saving to buy a new guitar. Mine got damaged on my flight to Germany."
@@ -362,7 +362,7 @@ npcs:
       de: Fensterputzerin
     type: windowWasher
     spawn: { x: 337, y: 2641 }
-    cond: 'quest.culturalProgram.active & ^global.joinedBand.drummer'
+    cond: 'quest.culturalProgram.active | ^global.joinedBand.drummer'
     dialogue:
       - type: sequence
         items:
