@@ -19,6 +19,12 @@ npm run build
 This will create a `dist` directory with the compiled game. This directory can be served by any web
 server.
 
+## Themes
+
+The game's theme (which controls the colors and some other aesthetic aspects) can be changed by
+overriding or modifying the configuration. Check `extras/config/settings.yml` for the available
+themes.
+
 ## Credits
 
 - **Story:** Eric Londaits, Elisabeth Schaber, and Andreas Matt

@@ -1,7 +1,8 @@
 game:
   languages: ['de', 'en']
   defaultLanguage: de
-  theme: zsb
+  theme: zsb # Zeit Stiftung Bucerius theme
+#  theme: futurium # Futurium theme
   canSwitchQuests: false
   duration: 480
   maxActiveQuests: 100
