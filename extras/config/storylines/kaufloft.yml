@@ -709,7 +709,7 @@ quests:
           engineer:
             - text:
                 en: "Useful shops? Yes. I’ll be happy with whatever the majority decides."
-                dde: "Nützliche Geschäfte? Ja. Ich bin zufrieden mit dem, was die Mehrheit entscheidet."
+                de: "Nützliche Geschäfte? Ja. Ich bin zufrieden mit dem, was die Mehrheit entscheidet."
           scientist:
             - text:
                 en: "A shop where I can buy baby toys and clothes. I don’t trust things sold online."
