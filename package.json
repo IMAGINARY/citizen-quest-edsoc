@@ -11,7 +11,7 @@
     "watch:copy": "cpx './extras/**' './dist/' -vw",
     "watch:compile": "cd ./dist/src && npm run watch",
     "install-server": "cd ./dist/server && npm install && cd ../..",
-    "build": "rm -rf ./dist && degit github:IMAGINARY/citizen-quest#v1.18.5 --force dist && cp -R ./extras/. ./dist/. && cd ./dist && npm install && npm run build && cd .. && npm run install-server"
+    "build": "rm -rf ./dist && degit github:IMAGINARY/citizen-quest#v1.18.6 --force dist && cp -R ./extras/. ./dist/. && cd ./dist && npm install && npm run build && cd .. && npm run install-server"
   },
   "repository": {
     "type": "git",
