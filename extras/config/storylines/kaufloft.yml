@@ -32,6 +32,7 @@ npcs:
   dogTan:
     name:
       en: "Emmy"
+      de: "Emmy"
     spawn: { x: 4255, y: 842 }
     dialogue:
       - text:
@@ -95,6 +96,7 @@ npcs:
   robot:
     name:
       en: "Robot"
+      de: "Roboter"
     spawn: { x: 3933, y: 1240 }
     dialogue:
       - type: cycle
@@ -814,7 +816,7 @@ quests:
           - text:
               en: "Find a singer working as a driver. They’re next to their car."
               de: "Finde eine Sängerin, die als Fahrerin arbeitet. Sie befindet sich neben ihrem Auto."
-              target: driver
+            target: driver
         dialogues:
           musicProducer:
             - type: sequence
