@@ -343,11 +343,11 @@ npcs:
       - type: sequence
         items:
           - text:
-              en: "I played the violin in my country, but they're incredibly expensive, so I still haven't bought one here."
-              de: "In meiner Heimat habe ich Geige gespielt, aber die sind unglaublich teuer, also habe ich mir hier noch keine gekauft."
+              en: "Back in my country, I studied music, but I need to work full-time now."
+              de: "In meiner Heimat habe ich Musik studiert, aber jetzt muss ich Vollzeit arbeiten."
           - text:
-              en: "I'm past the age to think of joining the Philharmonic, so it can wait."
-              de: "Ich bin zu alt, um bei der Philharmonie anzufangen, also eilt das nicht."
+              en: "It's a pity, but at my age, I need to be pragmatic."
+              de: "Es ist schade, aber in meinem Alter muss ich pragmatisch sein."
   bikeMessenger:
     name:
       en: Bike Messenger
